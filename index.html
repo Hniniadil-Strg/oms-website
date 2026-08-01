@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operations mit System – 3PL &amp; Auftragsfertigung in der Tanger Free Zone</title>
+<meta name="description" content="Operations mit System – Ihr Partner für 3PL-Dienstleistungen und outgesourcte Produktion in der Tanger Free Zone (Marokko). Auftragsfertigung, Konfektionierung, Lager &amp; Fulfillment für deutsche und europäische Unternehmen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --ink:#0E1A2A; --ink-2:#16283E; --copper:#C66A3E; --copper-soft:#D98B62;
+  --paper:#FFFFFF; --paper-2:#F4F6F8; --grey:#5A6572; --line:rgba(14,26,42,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3,.brand{font-family:'Jura',sans-serif;font-weight:500;letter-spacing:.04em}
+a{color:var(--copper);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* Header */
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.nav .logo{display:flex;align-items:center;gap:12px}
+.nav .logo svg{height:34px;width:auto}
+.nav .brand{font-size:15px;letter-spacing:.10em;line-height:1.25}
+.nav .brand small{display:block;font-weight:300;font-size:10px;letter-spacing:.28em;color:var(--copper)}
+.nav nav{display:flex;gap:26px;font-size:14px}
+.nav nav a{color:var(--ink);opacity:.85}
+@media(max-width:760px){.nav nav{display:none}}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%);color:var(--paper);position:relative;overflow:hidden}
+.hero .grid-bg{position:absolute;inset:0;opacity:.07;background-image:radial-gradient(closest-side,#fff 72%,transparent 74%);background-size:34px 34px;mask-image:linear-gradient(180deg,transparent, #000 30%, #000 70%, transparent)}
+.hero .wrap{position:relative;padding:110px 24px 96px}
+.hero .badge{display:inline-block;border:1px solid rgba(255,255,255,.35);border-radius:100px;font-size:12.5px;letter-spacing:.14em;padding:7px 18px;margin-bottom:34px;color:#E8DCD2}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.16;letter-spacing:.05em;max-width:820px}
+.hero h1 em{font-style:normal;color:var(--copper-soft)}
+.hero p.lead{margin-top:26px;max-width:640px;font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.82)}
+.hero .cta{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 30px;border-radius:8px;font-size:15.5px;font-weight:600}
+.btn-copper{background:var(--copper);color:#fff}
+.btn-copper:hover{background:#B25E36;text-decoration:none}
+.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{border-color:#fff;text-decoration:none}
+
+/* Sections */
+section{padding:84px 0}
+section.alt{background:var(--paper-2)}
+.kicker{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.30em;color:var(--copper);text-transform:uppercase;margin-bottom:14px}
+h2{font-size:clamp(24px,3.4vw,34px);letter-spacing:.05em;margin-bottom:18px}
+.intro{max-width:720px;color:var(--grey)}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:44px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 26px}
+section.alt .card{background:var(--paper)}
+.card .pod{width:38px;height:38px;border-radius:11px;background:var(--ink);margin-bottom:18px;position:relative}
+.card .pod::after{content:'';position:absolute;right:-7px;bottom:-7px;width:14px;height:14px;border-radius:4.5px;background:var(--copper)}
+.card h3{font-size:17.5px;letter-spacing:.05em;margin-bottom:10px}
+.card p{font-size:15px;color:var(--grey)}
+.card .soon{display:inline-block;margin-top:14px;font-size:11.5px;letter-spacing:.12em;color:var(--copper);border:1px solid rgba(198,106,62,.4);padding:3px 10px;border-radius:100px}
+
+/* Why Tanger */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;margin-top:10px}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.facts{display:grid;gap:0;border-top:1px solid var(--line)}
+.fact{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.fact b{font-family:'Jura';font-weight:500;font-size:24px;color:var(--copper);letter-spacing:.03em}
+.fact span{color:var(--grey);font-size:15px;align-self:center}
+
+/* Roadmap */
+.roadmap{margin-top:46px;display:grid;gap:0;border-left:2px solid var(--line);padding-left:0}
+.step{position:relative;padding:0 0 34px 34px}
+.step::before{content:'';position:absolute;left:-8px;top:4px;width:14px;height:14px;border-radius:4.5px;background:var(--ink)}
+.step.done::before{background:var(--copper)}
+.step .when{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.22em;color:var(--copper);text-transform:uppercase}
+.step h3{font-size:17px;margin:6px 0 4px}
+.step p{font-size:15px;color:var(--grey);max-width:560px}
+
+/* Contact */
+.contact-box{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.contact-box{grid-template-columns:1fr}}
+.loc{border:1px solid var(--line);border-radius:14px;padding:28px}
+.loc h3{font-size:16px;letter-spacing:.08em;margin-bottom:8px}
+.loc p{font-size:15px;color:var(--grey)}
+.contact-mail{margin-top:34px;font-size:clamp(18px,2.6vw,24px);font-family:'Jura';letter-spacing:.05em}
+
+/* Footer */
+footer{background:var(--ink);color:rgba(255,255,255,.75);font-size:14px}
+footer .top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:38px 0;border-bottom:1px solid rgba(255,255,255,.12);flex-wrap:wrap}
+footer .top svg{height:40px;width:auto}
+footer .legal{padding:30px 0 46px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media(max-width:760px){footer .legal{grid-template-columns:1fr}}
+footer h4{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.22em;color:#fff;text-transform:uppercase;margin-bottom:12px}
+footer p{margin-bottom:8px}
+footer a{color:var(--copper-soft)}
+.fineprint{padding:18px 0 26px;font-size:12.5px;color:rgba(255,255,255,.45)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240"><rect x="29.80" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="98.00" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#C66A3E"/><rect x="29.80" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="29.80" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="98.00" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/></svg>
+      <div class="brand">OPERATIONS<small>MIT SYSTEM</small></div>
+    </div>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#standort">Standort Tanger</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <span class="badge">STARTUP · DÜSSELDORF → TANGER FREE ZONE</span>
+    <h1>Produktion und Logistik<br>ausgelagert — <em>mit System.</em></h1>
+    <p class="lead">Wir bauen eine Plattform für Auftragsfertigung und 3PL-Dienstleistungen in der Tanger Free Zone (Marokko) – für deutsche und europäische Unternehmen, die Produktion, Konfektionierung und Fulfillment auslagern wollen. In Euro fakturiert, zollfrei in die EU, mit deutschem Ansprechpartner.</p>
+    <div class="cta">
+      <a class="btn btn-copper" href="#kontakt">Gespräch vereinbaren</a>
+      <a class="btn btn-ghost" href="#leistungen">Was wir aufbauen</a>
+    </div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="kicker">Leistungen</div>
+    <h2>Was wir für Sie übernehmen</h2>
+    <p class="intro">Wir verstehen uns als verlängerte Werkbank und Logistikpartner in einem: Sie behalten Produkt, Marke und Kunden – wir übernehmen Fertigung, Verpackung und Warenfluss. Unsere erste Produktionslinie ist in Planung; Start der Pilotfertigung ist für Ende 2026 vorgesehen.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="pod"></div>
+        <h3>AUFTRAGSFERTIGUNG</h3>
+        <p>Lohnfertigung nach Ihren Spezifikationen und Rezepturen – vom Pulvermischen bis zur fertigen Produkteinheit, dokumentiert und qualitätsgeprüft.</p>
+        <span class="soon">IM AUFBAU · AB 2027</span>
+      </div>
+      <div class="card">
+        <div class="pod"></div>
+        <h3>KONFEKTIONIERUNG &amp; VERPACKUNG</h3>
+        <p>Abfüllen, Zählen, Verwiegen, Versiegeln, Etikettieren – auch viele kleine Lose und Sprachvarianten wirtschaftlich abgebildet.</p>
+        <span class="soon">IM AUFBAU · AB 2027</span>
+      </div>
+      <div class="card">
+        <div class="pod"></div>
+        <h3>LAGER &amp; FULFILLMENT (3PL)</h3>
+        <p>Klimatisierte Lagerung in der Freizone, Bestandsführung, Kommissionierung und Versand-Handling ab Tanger Med – Container wie Stückgut.</p>
+        <span class="soon">IM AUFBAU · AB 2027</span>
+      </div>
+      <div class="card">
+        <div class="pod"></div>
+        <h3>BESCHAFFUNG &amp; SUPPLY CHAIN</h3>
+        <p>Auf Wunsch übernehmen wir den Einkauf Ihrer Roh- und Packstoffe und bündeln Mengen – transparent und mit offener Kalkulation.</p>
+        <span class="soon">PERSPEKTIVE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="standort">
+  <div class="wrap">
+    <div class="kicker">Standort</div>
+    <h2>Warum Tanger Free Zone?</h2>
+    <div class="split">
+      <p class="intro">Die Zone d'Accélération Industrielle in Tanger ist einer der dynamischsten Industriestandorte Afrikas – direkt an der Straße von Gibraltar, mit dem größten Hafen des Mittelmeers (Tanger Med) vor der Tür. Für europäische Auftraggeber heißt das: Produktion zu wettbewerbsfähigen Kosten, ohne die Nachteile langer Asien-Lieferketten – und dank Assoziierungsabkommen mit der EU ohne Zollgrenze.</p>
+      <div class="facts">
+        <div class="fact"><b>4–6 Tage</b><span>Laufzeit Tanger Med → Deutschland, planbar und kurz</span></div>
+        <div class="fact"><b>0 % Zoll</b><span>präferenzieller Warenursprung Marokko → EU-Import zollfrei</span></div>
+        <div class="fact"><b>EUR</b><span>Fakturierung in Euro – kein Währungsrisiko für Sie</span></div>
+        <div class="fact"><b>DE + FR</b><span>deutschsprachige Führung, französischsprachiges Team vor Ort</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="wrap">
+    <div class="kicker">Roadmap</div>
+    <h2>Wo wir stehen – ehrlich gesagt</h2>
+    <p class="intro">Wir sind ein Startup und bauen gerade auf. Statt fertiger Hochglanz-Versprechen zeigen wir Ihnen lieber transparent, was wann kommt:</p>
+    <div class="roadmap" style="margin-top:46px">
+      <div class="step done">
+        <div class="when">August 2026</div>
+        <h3>Gründung Operations mit System GmbH, Düsseldorf</h3>
+        <p>Die deutsche Muttergesellschaft als Vertragspartner für unsere Kunden – deutsches Recht, deutsche Rechnung.</p>
+      </div>
+      <div class="step">
+        <div class="when">Herbst 2026</div>
+        <h3>Gründung der Tochtergesellschaft in Marokko &amp; Zulassung Tanger Free Zone</h3>
+        <p>Operations mit System SARL mit Produktionsfläche in der Zone d'Accélération Industrielle, Tanger.</p>
+      </div>
+      <div class="step">
+        <div class="when">Q4 2026</div>
+        <h3>Aufbau der ersten Produktions- und Verpackungslinie, Pilotfertigung</h3>
+        <p>Installation der Anlagen, Probeläufe und Musterfreigaben gemeinsam mit unserem Pilotkunden.</p>
+      </div>
+      <div class="step">
+        <div class="when">Ab 2027</div>
+        <h3>Serienbetrieb &amp; Öffnung der Plattform für weitere Auftraggeber</h3>
+        <p>Kapazitäten für Auftragsfertigung, Konfektionierung und 3PL – sprechen Sie uns frühzeitig an, um sich Kapazität zu sichern.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="ueber-uns">
+  <div class="wrap">
+    <div class="kicker">Über uns</div>
+    <h2>Ein junges Unternehmen mit klarem Plan</h2>
+    <p class="intro">Operations mit System wird von Unternehmern aufgebaut, die internationale Handels- und Lieferketten zwischen Europa und Marokko seit Jahren aus der Praxis kennen. Wir glauben: Outsourcing muss nicht anonym und weit weg sein. Unsere Kunden bekommen einen Produktionspartner in 4–6 Tagen Entfernung, einen deutschen Vertragspartner und einen direkten Draht zur Geschäftsführung – ohne Umwege.</p>
+    <p class="intro" style="margin-top:16px">Hinter dem Aufbau steht ein familiengeführtes Unternehmernetzwerk in Düsseldorf mit Beteiligungen in Handel, Immobilien und Logistik. Die Operations mit System GmbH bündelt dieses Know-how und bringt es in die Freizone Tanger.</p>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="kicker">Kontakt</div>
+    <h2>Lassen Sie uns sprechen</h2>
+    <p class="intro">Sie denken über ausgelagerte Produktion, Konfektionierung oder ein 3PL-Setup nach? Erzählen Sie uns von Ihrem Produkt – wir sagen Ihnen offen, was wir heute schon können und was erst später geht.</p>
+    <div class="contact-mail">✉ <a href="mailto:kontakt@operationsmitsystem.de">kontakt@operationsmitsystem.de</a></div>
+    <div class="contact-box">
+      <div class="loc">
+        <h3>DÜSSELDORF (VERTRAG &amp; VERTRIEB)</h3>
+        <p>Operations mit System GmbH<br>Burgplatz 12<br>40213 Düsseldorf<br>Deutschland</p>
+      </div>
+      <div class="loc">
+        <h3>TANGER (PRODUKTION · IM AUFBAU)</h3>
+        <p>Operations mit System SARL <em>(in Gründung)</em><br>Zone d'Accélération Industrielle<br>Tanger Free Zone<br>Marokko</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240"><rect x="29.80" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="98.00" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#C66A3E"/><rect x="29.80" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="29.80" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="98.00" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/></svg>
+      <div style="font-family:'Jura';letter-spacing:.18em;font-size:13px">PRODUKTION · KONFEKTIONIERUNG · 3PL</div>
+    </div>
+    <div class="legal" id="impressum">
+      <div>
+        <h4>Impressum</h4>
+        <p>Operations mit System GmbH<br>Burgplatz 12, 40213 Düsseldorf, Deutschland<br>Geschäftsführung: &#91;wird nach Gründung am 05.08.2026 ergänzt&#93;<br>Handelsregister: Amtsgericht Düsseldorf, HRB folgt (Gesellschaft in Gründung, Notartermin 05.08.2026)<br>E-Mail: kontakt@operationsmitsystem.de</p>
+      </div>
+      <div id="datenschutz">
+        <h4>Datenschutz</h4>
+        <p>Diese Website verwendet keine Cookies, keine Tracking-Dienste und keine Analyse-Tools. Beim Aufruf werden durch den Hosting-Anbieter technisch notwendige Server-Logdaten (z.B. IP-Adresse, Zeitpunkt) verarbeitet (Art. 6 Abs. 1 lit. f DSGVO). Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Beantwortung Ihrer Anfrage. Verantwortlicher: Operations mit System GmbH (Anschrift siehe Impressum).</p>
+      </div>
+    </div>
+    <div class="fineprint">© 2026 Operations mit System GmbH · Alle Angaben zu geplanten Leistungen beziehen sich auf den dargestellten Aufbau-Zeitplan.</div>
+  </div>
+</footer>
+
+</body>
+</html>
