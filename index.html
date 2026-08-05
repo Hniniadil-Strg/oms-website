@@ -8,6 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;500&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="de" href="https://operationsmitsystem.de/">
+<link rel="alternate" hreflang="en" href="https://operationsmitsystem.de/en.html">
+<link rel="alternate" hreflang="fr" href="https://operationsmitsystem.de/fr.html">
+<link rel="alternate" hreflang="ar" href="https://operationsmitsystem.de/ar.html">
+<link rel="alternate" hreflang="x-default" href="https://operationsmitsystem.de/">
 <style>
 
 :root{
@@ -32,6 +37,9 @@ header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:bl
 .nav nav{display:flex;gap:26px;font-size:14px}
 .nav nav a{color:var(--ink);opacity:.85}
 @media(max-width:760px){.nav nav{display:none}}
+.lang{display:flex;gap:12px;font-size:13px;font-family:'Jura';letter-spacing:.08em}
+.lang a{color:var(--ink);opacity:.65}
+.lang a.cur{color:var(--copper);opacity:1;font-weight:600;text-decoration:none}
 
 /* Hero */
 .hero{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%);color:var(--paper);position:relative;overflow:hidden}
@@ -117,6 +125,7 @@ footer a{color:var(--copper-soft)}
       <a href="#ueber-uns">Über uns</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
+    <div class="lang"><a class="cur" href="index.html">DE</a><a href="en.html">EN</a><a href="fr.html">FR</a><a href="ar.html">AR</a></div>
   </div>
 </header>
 
@@ -250,7 +259,7 @@ footer a{color:var(--copper-soft)}
     <div class="legal" id="impressum">
       <div>
         <h4>Impressum</h4>
-        <p>Operations mit System GmbH<br>Burgplatz 12, 40213 Düsseldorf, Deutschland<br>Geschäftsführung: &#91;wird nach Gründung am 05.08.2026 ergänzt&#93;<br>Handelsregister: Amtsgericht Düsseldorf, HRB folgt (Gesellschaft in Gründung, Notartermin 05.08.2026)<br>E-Mail: kontakt@operationsmitsystem.de</p>
+        <p>Operations mit System GmbH<br>Burgplatz 12, 40213 Düsseldorf, Deutschland<br>Geschäftsführung: &#91;wird nach Gründung ergänzt&#93;<br>Handelsregister: Amtsgericht Düsseldorf, HRB folgt (Gesellschaft in Gründung)<br>E-Mail: kontakt@operationsmitsystem.de</p>
       </div>
       <div id="datenschutz">
         <h4>Datenschutz</h4>
