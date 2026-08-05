@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operations mit System – 3PL &amp; production en sous-traitance dans la zone franche de Tanger</title>
+<meta name="description" content="Operations mit System – votre partenaire pour les services 3PL et la production externalisée dans la zone franche de Tanger (Maroc). Sous-traitance industrielle, conditionnement, entreposage &amp; fulfillment pour les entreprises européennes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;500&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="de" href="https://operationsmitsystem.de/">
+<link rel="alternate" hreflang="en" href="https://operationsmitsystem.de/en.html">
+<link rel="alternate" hreflang="fr" href="https://operationsmitsystem.de/fr.html">
+<link rel="alternate" hreflang="ar" href="https://operationsmitsystem.de/ar.html">
+<link rel="alternate" hreflang="x-default" href="https://operationsmitsystem.de/">
+<style>
+
+:root{
+  --ink:#0E1A2A; --ink-2:#16283E; --copper:#C66A3E; --copper-soft:#D98B62;
+  --paper:#FFFFFF; --paper-2:#F4F6F8; --grey:#5A6572; --line:rgba(14,26,42,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3,.brand{font-family:'Jura',sans-serif;font-weight:500;letter-spacing:.04em}
+a{color:var(--copper);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* Header */
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.nav .logo{display:flex;align-items:center;gap:12px}
+.nav .logo svg{height:34px;width:auto}
+.nav .brand{font-size:15px;letter-spacing:.10em;line-height:1.25}
+.nav .brand small{display:block;font-weight:300;font-size:10px;letter-spacing:.28em;color:var(--copper)}
+.nav nav{display:flex;gap:26px;font-size:14px}
+.nav nav a{color:var(--ink);opacity:.85}
+@media(max-width:760px){.nav nav{display:none}}
+.lang{display:flex;gap:12px;font-size:13px;font-family:'Jura';letter-spacing:.08em}
+.lang a{color:var(--ink);opacity:.65}
+.lang a.cur{color:var(--copper);opacity:1;font-weight:600;text-decoration:none}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%);color:var(--paper);position:relative;overflow:hidden}
+.hero .grid-bg{position:absolute;inset:0;opacity:.07;background-image:radial-gradient(closest-side,#fff 72%,transparent 74%);background-size:34px 34px;mask-image:linear-gradient(180deg,transparent, #000 30%, #000 70%, transparent)}
+.hero .wrap{position:relative;padding:110px 24px 96px}
+.hero .badge{display:inline-block;border:1px solid rgba(255,255,255,.35);border-radius:100px;font-size:12.5px;letter-spacing:.14em;padding:7px 18px;margin-bottom:34px;color:#E8DCD2}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.16;letter-spacing:.05em;max-width:820px}
+.hero h1 em{font-style:normal;color:var(--copper-soft)}
+.hero p.lead{margin-top:26px;max-width:640px;font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.82)}
+.hero .cta{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 30px;border-radius:8px;font-size:15.5px;font-weight:600}
+.btn-copper{background:var(--copper);color:#fff}
+.btn-copper:hover{background:#B25E36;text-decoration:none}
+.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{border-color:#fff;text-decoration:none}
+
+/* Sections */
+section{padding:84px 0}
+section.alt{background:var(--paper-2)}
+.kicker{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.30em;color:var(--copper);text-transform:uppercase;margin-bottom:14px}
+h2{font-size:clamp(24px,3.4vw,34px);letter-spacing:.05em;margin-bottom:18px}
+.intro{max-width:720px;color:var(--grey)}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:44px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 26px}
+section.alt .card{background:var(--paper)}
+.card .pod{width:38px;height:38px;border-radius:11px;background:var(--ink);margin-bottom:18px;position:relative}
+.card .pod::after{content:'';position:absolute;right:-7px;bottom:-7px;width:14px;height:14px;border-radius:4.5px;background:var(--copper)}
+.card h3{font-size:17.5px;letter-spacing:.05em;margin-bottom:10px}
+.card p{font-size:15px;color:var(--grey)}
+.card .soon{display:inline-block;margin-top:14px;font-size:11.5px;letter-spacing:.12em;color:var(--copper);border:1px solid rgba(198,106,62,.4);padding:3px 10px;border-radius:100px}
+
+/* Why Tanger */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;margin-top:10px}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.facts{display:grid;gap:0;border-top:1px solid var(--line)}
+.fact{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.fact b{font-family:'Jura';font-weight:500;font-size:24px;color:var(--copper);letter-spacing:.03em}
+.fact span{color:var(--grey);font-size:15px;align-self:center}
+
+/* Roadmap */
+.roadmap{margin-top:46px;display:grid;gap:0;border-left:2px solid var(--line);padding-left:0}
+.step{position:relative;padding:0 0 34px 34px}
+.step::before{content:'';position:absolute;left:-8px;top:4px;width:14px;height:14px;border-radius:4.5px;background:var(--ink)}
+.step.done::before{background:var(--copper)}
+.step .when{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.22em;color:var(--copper);text-transform:uppercase}
+.step h3{font-size:17px;margin:6px 0 4px}
+.step p{font-size:15px;color:var(--grey);max-width:560px}
+
+/* Contact */
+.contact-box{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.contact-box{grid-template-columns:1fr}}
+.loc{border:1px solid var(--line);border-radius:14px;padding:28px}
+.loc h3{font-size:16px;letter-spacing:.08em;margin-bottom:8px}
+.loc p{font-size:15px;color:var(--grey)}
+.contact-mail{margin-top:34px;font-size:clamp(18px,2.6vw,24px);font-family:'Jura';letter-spacing:.05em}
+
+/* Footer */
+footer{background:var(--ink);color:rgba(255,255,255,.75);font-size:14px}
+footer .top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:38px 0;border-bottom:1px solid rgba(255,255,255,.12);flex-wrap:wrap}
+footer .top svg{height:40px;width:auto}
+footer .legal{padding:30px 0 46px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media(max-width:760px){footer .legal{grid-template-columns:1fr}}
+footer h4{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.22em;color:#fff;text-transform:uppercase;margin-bottom:12px}
+footer p{margin-bottom:8px}
+footer a{color:var(--copper-soft)}
+.fineprint{padding:18px 0 26px;font-size:12.5px;color:rgba(255,255,255,.45)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240"><rect x="29.80" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="98.00" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#C66A3E"/><rect x="29.80" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="29.80" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="98.00" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/></svg>
+      <div class="brand">OPERATIONS<small>MIT SYSTEM</small></div>
+    </div>
+    <nav>
+      <a href="#leistungen">Prestations</a>
+      <a href="#standort">Site de Tanger</a>
+      <a href="#roadmap">Feuille de route</a>
+      <a href="#ueber-uns">À propos</a>
+      <a href="#kontakt">Contact</a>
+    </nav>
+    <div class="lang"><a href="index.html">DE</a><a href="en.html">EN</a><a class="cur" href="fr.html">FR</a><a href="ar.html">AR</a></div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <span class="badge">STARTUP · DÜSSELDORF → ZONE FRANCHE DE TANGER</span>
+    <h1>Production et logistique<br>externalisées — <em>avec méthode.</em></h1>
+    <p class="lead">Nous construisons une plateforme de production en sous-traitance et de services 3PL dans la zone franche de Tanger (Maroc) – pour les entreprises allemandes et européennes qui souhaitent externaliser production, conditionnement et fulfillment. Facturation en euros, entrée dans l'UE en franchise de droits, interlocuteur germanophone.</p>
+    <div class="cta">
+      <a class="btn btn-copper" href="#kontakt">Convenir d&#39;un entretien</a>
+      <a class="btn btn-ghost" href="#leistungen">Ce que nous construisons</a>
+    </div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="kicker">Prestations</div>
+    <h2>Ce que nous prenons en charge</h2>
+    <p class="intro">Nous sommes à la fois votre atelier délocalisé et votre partenaire logistique : vous gardez le produit, la marque et vos clients – nous assurons la fabrication, l'emballage et les flux de marchandises. Notre première ligne de production est en cours de planification ; le démarrage de la production pilote est prévu pour fin 2026.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="pod"></div>
+        <h3>PRODUCTION EN SOUS-TRAITANCE</h3>
+        <p>Façonnage selon vos spécifications et formulations – du mélange des poudres à l&#39;unité finie, documenté et contrôlé qualité.</p>
+        <span class="soon">EN CONSTRUCTION · DÈS 2027</span>
+      </div>
+      <div class="card">
+        <div class="pod"></div>
+        <h3>CONDITIONNEMENT &amp; EMBALLAGE</h3>
+        <p>Remplissage, comptage, pesée, scellage, étiquetage – y compris petites séries et variantes linguistiques, de manière économique.</p>
+        <span class="soon">EN CONSTRUCTION · DÈS 2027</span>
+      </div>
+      <div class="card">
+        <div class="pod"></div>
+        <h3>ENTREPOSAGE &amp; FULFILLMENT (3PL)</h3>
+        <p>Stockage climatisé en zone franche, gestion des stocks, préparation de commandes et expédition depuis Tanger Med – conteneurs comme groupage.</p>
+        <span class="soon">EN CONSTRUCTION · DÈS 2027</span>
+      </div>
+      <div class="card">
+        <div class="pod"></div>
+        <h3>ACHATS &amp; SUPPLY CHAIN</h3>
+        <p>Sur demande, nous prenons en charge l&#39;achat de vos matières premières et emballages et mutualisons les volumes – en toute transparence, à livre ouvert.</p>
+        <span class="soon">PERSPECTIVE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="standort">
+  <div class="wrap">
+    <div class="kicker">Site</div>
+    <h2>Pourquoi la zone franche de Tanger ?</h2>
+    <div class="split">
+      <p class="intro">La Zone d'Accélération Industrielle de Tanger est l'un des sites industriels les plus dynamiques d'Afrique – en bordure du détroit de Gibraltar, avec le plus grand port de Méditerranée (Tanger Med) à sa porte. Pour les donneurs d'ordre européens, cela signifie : des coûts de production compétitifs sans les inconvénients des longues chaînes d'approvisionnement asiatiques – et, grâce à l'accord d'association avec l'UE, sans barrière douanière.</p>
+      <div class="facts">
+        <div class="fact"><b>4–6 jours</b><span>délai Tanger Med → Europe, court et prévisible</span></div>
+        <div class="fact"><b>0 % droits</b><span>origine préférentielle Maroc → importation dans l&#39;UE en franchise</span></div>
+        <div class="fact"><b>EUR</b><span>facturation en euros – aucun risque de change pour vous</span></div>
+        <div class="fact"><b>DE + FR</b><span>direction germanophone, équipe francophone sur place</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="wrap">
+    <div class="kicker">Feuille de route</div>
+    <h2>Où nous en sommes – en toute franchise</h2>
+    <p class="intro">Nous sommes une startup en pleine construction. Plutôt que des promesses sur papier glacé, nous préférons vous montrer en toute transparence ce qui arrive, et quand :</p>
+    <div class="roadmap" style="margin-top:46px">
+      <div class="step done">
+        <div class="when">Août 2026</div>
+        <h3>Création d&#39;Operations mit System GmbH, Düsseldorf</h3>
+        <p>La société mère allemande comme partenaire contractuel de nos clients – droit allemand, facture allemande.</p>
+      </div>
+      <div class="step">
+        <div class="when">Automne 2026</div>
+        <h3>Création de la filiale marocaine &amp; agrément de la zone franche de Tanger</h3>
+        <p>Operations mit System SARL avec surface de production dans la Zone d'Accélération Industrielle, Tanger.</p>
+      </div>
+      <div class="step">
+        <div class="when">Q4 2026</div>
+        <h3>Mise en place de la première ligne de production et d&#39;emballage, production pilote</h3>
+        <p>Installation des équipements, essais et validation des échantillons avec notre client pilote.</p>
+      </div>
+      <div class="step">
+        <div class="when">Dès 2027</div>
+        <h3>Production en série &amp; ouverture de la plateforme à d&#39;autres donneurs d&#39;ordre</h3>
+        <p>Capacités de sous-traitance, de conditionnement et de 3PL – contactez-nous tôt pour réserver vos capacités.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="ueber-uns">
+  <div class="wrap">
+    <div class="kicker">À propos</div>
+    <h2>Une jeune entreprise avec un plan clair</h2>
+    <p class="intro">Operations mit System est portée par des entrepreneurs qui connaissent depuis des années, sur le terrain, le commerce et les chaînes d'approvisionnement entre l'Europe et le Maroc. Notre conviction : l'externalisation ne doit être ni anonyme ni lointaine. Nos clients disposent d'un partenaire de production à 4–6 jours, d'un contractant allemand et d'une ligne directe avec la direction – sans détours.</p>
+    <p class="intro" style="margin-top:16px">Derrière le projet se trouve un réseau entrepreneurial familial de Düsseldorf, avec des participations dans le commerce, l'immobilier et la logistique. Operations mit System GmbH regroupe ce savoir-faire et l'apporte dans la zone franche de Tanger.</p>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="kicker">Contact</div>
+    <h2>Parlons-en</h2>
+    <p class="intro">Vous envisagez une production externalisée, du conditionnement ou un dispositif 3PL ? Parlez-nous de votre produit – nous vous dirons franchement ce que nous savons déjà faire aujourd&#39;hui et ce qui viendra plus tard.</p>
+    <div class="contact-mail">✉ <a href="mailto:kontakt@operationsmitsystem.de">kontakt@operationsmitsystem.de</a></div>
+    <div class="contact-box">
+      <div class="loc">
+        <h3>DÜSSELDORF (CONTRATS &amp; COMMERCIAL)</h3>
+        <p>Operations mit System GmbH<br>Burgplatz 12<br>40213 Düsseldorf<br>Allemagne</p>
+      </div>
+      <div class="loc">
+        <h3>TANGER (PRODUCTION · EN CONSTRUCTION)</h3>
+        <p>Operations mit System SARL <em>(en cours de création)</em><br>Zone d'Accélération Industrielle<br>Zone franche de Tanger<br>Maroc</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240"><rect x="29.80" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="98.00" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#C66A3E"/><rect x="29.80" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="29.80" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="98.00" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/></svg>
+      <div style="font-family:'Jura';letter-spacing:.18em;font-size:13px">PRODUCTION · CONDITIONNEMENT · 3PL</div>
+    </div>
+    <div class="legal" id="impressum">
+      <div>
+        <h4>Mentions légales (Impressum)</h4>
+        <p>Operations mit System GmbH<br>Burgplatz 12, 40213 Düsseldorf, Allemagne<br>Direction : &#91;sera complété après la création&#93;<br>Registre du commerce : Amtsgericht Düsseldorf, HRB à venir (société en cours de création)<br>E-mail : kontakt@operationsmitsystem.de</p>
+      </div>
+      <div id="datenschutz">
+        <h4>Protection des données</h4>
+        <p>Ce site n'utilise ni cookies, ni services de suivi, ni outils d'analyse. Lors de votre visite, l'hébergeur traite les données de connexion techniquement nécessaires (p. ex. adresse IP, horodatage) (art. 6, par. 1, point f du RGPD). Si vous nous contactez par e-mail, vos données ne sont traitées que pour répondre à votre demande. Responsable : Operations mit System GmbH (adresse : voir mentions légales).</p>
+      </div>
+    </div>
+    <div class="fineprint">© 2026 Operations mit System GmbH · Toutes les indications relatives aux prestations prévues se réfèrent au calendrier de développement présenté.</div>
+  </div>
+</footer>
+
+</body>
+</html>
