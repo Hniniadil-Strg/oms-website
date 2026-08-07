@@ -1,281 +1,246 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="de_DE">
-<meta property="og:site_name" content="Operations mit System">
-<meta property="og:title" content="Operations mit System ‚Äì 3PL & Auftragsfertigung in der Tanger Free Zone">
-<meta property="og:description" content="Auftragsfertigung, Konfektionierung, Lager & Fulfillment in der Tanger Free Zone ‚Äì in Euro fakturiert, zollfrei in die EU, mit deutschem Ansprechpartner.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operations mit System — Ihr Produktions-Hub in Tanger</title>
+<meta name="description" content="Lohnfertigung, Konfektionierung und Logistik in der Tanger Free Zone: 15–30 % günstiger, 0 % Zoll in die EU, 14 Tage Seefracht. Deutscher Qualitätsanspruch, Lean Six Sigma.">
+<meta property="og:title" content="Operations mit System — Ihr Produktions-Hub in Tanger">
+<meta property="og:description" content="Lohnfertigung in der Tanger Free Zone: 15–30 % günstiger, 0 % Zoll, 14 Tage Seefracht nach Nordeuropa.">
+<meta property="og:image" content="https://operationsmitsystem.de/hub_uebersicht.jpg">
 <meta property="og:url" content="https://operationsmitsystem.de/">
-<meta property="og:image" content="https://operationsmitsystem.de/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<title>Operations mit System ‚Äì 3PL &amp; Auftragsfertigung in der Tanger Free Zone</title>
-<meta name="description" content="Operations mit System ‚Äì Ihr Partner f√ºr 3PL-Dienstleistungen und outgesourcte Produktion in der Tanger Free Zone (Marokko). Auftragsfertigung, Konfektionierung, Lager &amp; Fulfillment f√ºr deutsche und europ√§ische Unternehmen.">
-<link rel="stylesheet" href="fonts.css">
-<link rel="alternate" hreflang="de" href="https://operationsmitsystem.de/">
-<link rel="alternate" hreflang="en" href="https://operationsmitsystem.de/en.html">
-<link rel="alternate" hreflang="fr" href="https://operationsmitsystem.de/fr.html">
-<link rel="alternate" hreflang="ar" href="https://operationsmitsystem.de/ar.html">
-<link rel="alternate" hreflang="x-default" href="https://operationsmitsystem.de/">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-
-:root{
-  --ink:#0E1A2A; --ink-2:#16283E; --copper:#C66A3E; --copper-soft:#D98B62;
-  --paper:#FFFFFF; --paper-2:#F4F6F8; --grey:#5A6572; --line:rgba(14,26,42,.12);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
-h1,h2,h3,.brand{font-family:'Jura',sans-serif;font-weight:500;letter-spacing:.04em}
-a{color:var(--copper);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-
-/* Header */
-header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.nav .logo{display:flex;align-items:center;gap:12px}
-.nav .logo svg{height:34px;width:auto}
-.nav .brand{font-size:15px;letter-spacing:.10em;line-height:1.25}
-.nav .brand small{display:block;font-weight:300;font-size:10px;letter-spacing:.28em;color:var(--copper)}
-.nav nav{display:flex;gap:26px;font-size:14px}
-.nav nav a{color:var(--ink);opacity:.85}
-@media(max-width:760px){.nav nav{display:none}}
-.lang{display:flex;gap:12px;font-size:13px;font-family:'Jura';letter-spacing:.08em}
-.lang a{color:var(--ink);opacity:.65}
-.lang a.cur{color:var(--copper);opacity:1;font-weight:600;text-decoration:none}
-
-/* Hero */
-.hero{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%);color:var(--paper);position:relative;overflow:hidden}
-.hero .grid-bg{position:absolute;inset:0;opacity:.07;background-image:radial-gradient(closest-side,#fff 72%,transparent 74%);background-size:34px 34px;mask-image:linear-gradient(180deg,transparent, #000 30%, #000 70%, transparent)}
-.hero .wrap{position:relative;padding:110px 24px 96px}
-.hero .badge{display:inline-block;border:1px solid rgba(255,255,255,.35);border-radius:100px;font-size:12.5px;letter-spacing:.14em;padding:7px 18px;margin-bottom:34px;color:#E8DCD2}
-.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.16;letter-spacing:.05em;max-width:820px}
-.hero h1 em{font-style:normal;color:var(--copper-soft)}
-.hero p.lead{margin-top:26px;max-width:640px;font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.82)}
-.hero .cta{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
-.btn{display:inline-block;padding:14px 30px;border-radius:8px;font-size:15.5px;font-weight:600}
-.btn-copper{background:var(--copper);color:#fff}
-.btn-copper:hover{background:#B25E36;text-decoration:none}
-.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#fff}
-.btn-ghost:hover{border-color:#fff;text-decoration:none}
-
-/* Sections */
-section{padding:84px 0}
-section.alt{background:var(--paper-2)}
-.kicker{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.30em;color:var(--copper);text-transform:uppercase;margin-bottom:14px}
-h2{font-size:clamp(24px,3.4vw,34px);letter-spacing:.05em;margin-bottom:18px}
-.intro{max-width:720px;color:var(--grey)}
-
-/* Cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:44px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px 26px}
-section.alt .card{background:var(--paper)}
-.card .pod{width:38px;height:38px;border-radius:11px;background:var(--ink);margin-bottom:18px;position:relative}
-.card .pod::after{content:'';position:absolute;right:-7px;bottom:-7px;width:14px;height:14px;border-radius:4.5px;background:var(--copper)}
-.card h3{font-size:17.5px;letter-spacing:.05em;margin-bottom:10px}
-.card p{font-size:15px;color:var(--grey)}
-.card .soon{display:inline-block;margin-top:14px;font-size:11.5px;letter-spacing:.12em;color:var(--copper);border:1px solid rgba(198,106,62,.4);padding:3px 10px;border-radius:100px}
-
-/* Why Tanger */
-.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;margin-top:10px}
-@media(max-width:860px){.split{grid-template-columns:1fr}}
-.facts{display:grid;gap:0;border-top:1px solid var(--line)}
-.fact{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
-.fact b{font-family:'Jura';font-weight:500;font-size:24px;color:var(--copper);letter-spacing:.03em}
-.fact span{color:var(--grey);font-size:15px;align-self:center}
-
-/* Roadmap */
-.roadmap{margin-top:46px;display:grid;gap:0;border-left:2px solid var(--line);padding-left:0}
-.step{position:relative;padding:0 0 34px 34px}
-.step::before{content:'';position:absolute;left:-8px;top:4px;width:14px;height:14px;border-radius:4.5px;background:var(--ink)}
-.step.done::before{background:var(--copper)}
-.step .when{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.22em;color:var(--copper);text-transform:uppercase}
-.step h3{font-size:17px;margin:6px 0 4px}
-.step p{font-size:15px;color:var(--grey);max-width:560px}
-
-/* Contact */
-.contact-box{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
-@media(max-width:760px){.contact-box{grid-template-columns:1fr}}
-.loc{border:1px solid var(--line);border-radius:14px;padding:28px}
-.loc h3{font-size:16px;letter-spacing:.08em;margin-bottom:8px}
-.loc p{font-size:15px;color:var(--grey)}
-.contact-mail{margin-top:34px;font-size:clamp(18px,2.6vw,24px);font-family:'Jura';letter-spacing:.05em}
-
-/* Footer */
-footer{background:var(--ink);color:rgba(255,255,255,.75);font-size:14px}
-footer .top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:38px 0;border-bottom:1px solid rgba(255,255,255,.12);flex-wrap:wrap}
-footer .top svg{height:40px;width:auto}
-footer .legal{padding:30px 0 46px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
-@media(max-width:760px){footer .legal{grid-template-columns:1fr}}
-footer h4{font-family:'Jura';font-weight:500;font-size:13px;letter-spacing:.22em;color:#fff;text-transform:uppercase;margin-bottom:12px}
-footer p{margin-bottom:8px}
-footer a{color:var(--copper-soft)}
-.fineprint{padding:18px 0 26px;font-size:12.5px;color:rgba(255,255,255,.45)}
+  :root{--navy:#0E1A2A;--copper:#C66A3E;--copper-soft:#D98A5F;--bg:#FAFBFC;--surface:#fff;--ink:#0E1A2A;--ink2:#4A5A6E;--line:#E3E8EE}
+  *{box-sizing:border-box}
+  html{font-size:19px}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Jura","Avenir Next",sans-serif;line-height:1.65}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);font-weight:700}
+  h1,h2{line-height:1.15;font-weight:600}
+  .concept{position:sticky;top:0;z-index:60;background:var(--copper);color:#fff;text-align:center;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;padding:6px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(14,26,42,.95);backdrop-filter:blur(8px);direction:ltr}
+  nav .wrap{display:flex;align-items:center;height:62px;gap:20px}
+  nav img{height:64px;background:#fff;border-radius:8px;padding:6px 14px}
+  nav .wrap{height:84px}
+  .lang{margin-left:auto;display:flex;gap:6px}
+  .lang button{background:transparent;border:1px solid #3A4C63;color:#93A3B8;border-radius:5px;padding:5px 12px;cursor:pointer;font:600 .78rem "Jura";letter-spacing:.08em}
+  .lang button.on{background:var(--copper);border-color:var(--copper);color:#fff}
+  .hero{background:radial-gradient(900px 400px at 85% -10%,rgba(198,106,62,.2),transparent 60%),var(--navy);color:#fff;padding:64px 0}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+  .hero h1{font-size:clamp(1.7rem,3.4vw,2.5rem);margin:.3em 0}
+  .hero h1 em{font-style:normal;color:var(--copper-soft)}
+  .hero p{color:#93A3B8;max-width:46ch}
+  .hero video{width:100%;border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .cta{display:inline-block;margin-top:20px;background:var(--copper);color:#fff;text-decoration:none;padding:13px 26px;border-radius:5px;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;font-weight:700}
+  section{padding:58px 0}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .split video,.split img,.ph{width:100%;border-radius:12px;box-shadow:0 16px 44px rgba(14,26,42,.14);display:block}
+  .ph{aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#E4E9EF,#E4E9EF 12px,#EDF1F5 12px,#EDF1F5 24px);display:grid;place-items:center;color:var(--ink2);font-size:.85rem;text-align:center;padding:20px}
+  .split h2{font-size:1.6rem;margin:.3em 0 .4em}
+  .split p{color:var(--ink2);max-width:52ch}
+  .num{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--copper);color:#fff;font-weight:700;font-size:1.1rem;margin-bottom:10px}
+  section:nth-of-type(even){background:var(--surface)}
+  .models{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+  .model{border:1px solid var(--line);border-left:4px solid var(--copper);border-radius:8px;padding:14px;background:var(--surface)}
+  .model b{display:block;font-size:.9rem}.model span{font-size:.8rem;color:var(--ink2)}
+  .ctaband{background:linear-gradient(180deg,var(--surface),#F1ECE6);padding:80px 0}
+  /* Stats-Band */
+  .stats{background:var(--navy);color:#fff;padding:56px 0}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+  .stats b{display:block;font-size:2.2rem;color:var(--copper-soft);font-variant-numeric:tabular-nums}
+  .stats span{font-size:.8rem;color:#93A3B8}
+  @media(max-width:820px){.stats .wrap{grid-template-columns:1fr 1fr}}
+  /* Rechner */
+  .calc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:0 16px 44px rgba(14,26,42,.08);max-width:720px;margin:34px auto 0}
+  .calc label{font-size:.85rem;color:var(--ink2);display:block;margin-bottom:6px}
+  .calc input[type=range]{width:100%;accent-color:var(--copper);height:34px;cursor:pointer}
+  .calc input[type=range]::-webkit-slider-runnable-track{height:12px;border-radius:8px;background:var(--line)}
+  .calc input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:34px;height:34px;border-radius:50%;background:var(--copper);border:4px solid #fff;box-shadow:0 3px 10px rgba(14,26,42,.3);margin-top:-11px}
+  .calc .row{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;margin-bottom:22px}
+  .calc .result{background:linear-gradient(135deg,#F7F0EA,#FDF9F5);border-radius:10px;padding:20px;text-align:center}
+  .calc .result b{font-size:1.7rem;color:var(--copper)}
+  .calc .note{font-size:.72rem;color:var(--ink2);margin-top:10px}
+  /* FAQ */
+  .faq{max-width:820px;margin:30px auto 0}
+  .faq details{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+  .faq summary{cursor:pointer;padding:18px 22px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq summary::after{content:"+";color:var(--copper);font-size:1.3rem;font-weight:400}
+  .faq details[open] summary::after{content:"–"}
+  .faq details div{padding:0 22px 18px;color:var(--ink2);font-size:.92rem}
+  /* Team + Roadmap */
+  .team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+  .tcard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;text-align:center}
+  .tcard .avatar{width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--copper-soft);display:grid;place-items:center;font-weight:700;font-size:1.2rem;margin:0 auto 12px}
+  .tcard b{display:block}.tcard span{font-size:.82rem;color:var(--ink2)}
+  @media(max-width:820px){.team{grid-template-columns:1fr}}
+  .roadmap{display:flex;gap:0;margin-top:30px;overflow-x:auto}
+  .rstep{flex:1;min-width:150px;border-top:3px solid var(--line);padding:16px 14px 0;position:relative}
+  .rstep::before{content:"";position:absolute;top:-8px;left:14px;width:13px;height:13px;border-radius:50%;background:var(--line)}
+  .rstep.done{border-top-color:var(--copper)}.rstep.done::before{background:var(--copper)}
+  .rstep b{font-size:.85rem;display:block}.rstep span{font-size:.78rem;color:var(--ink2)}
+  .cta.ghost2{background:transparent;border:2px solid var(--copper);color:var(--copper);margin-left:12px}
+  footer{background:var(--navy);color:#93A3B8;padding:44px 0;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+  footer a{color:var(--copper-soft);text-decoration:none}
+  @media(max-width:820px){.hero .wrap,.split{grid-template-columns:1fr}.split.rev video,.split.rev .ph{order:-1}}
 </style>
 </head>
 <body>
+<nav><div class="wrap">
+  <img src="logo_hell.png" alt="Operations mit System">
+  <a href="index.html" style="color:#D98A5F;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600" data-i="navStart">Start</a>
+  <a href="unternehmer.html" style="color:#93A3B8;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase" data-i="navUnt">Für Unternehmer</a>
+  <a href="karriere.html" style="color:#93A3B8;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase" data-i="navKar">Karriere</a>
+  <div class="lang"><button class="on" data-lang="de">DE</button><button data-lang="en">EN</button><button data-lang="fr">FR</button><button data-lang="ar">ع</button></div>
+</div></nav>
 
-<header>
-  <div class="wrap nav">
-    <div class="logo">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240"><rect x="29.80" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="98.00" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#C66A3E"/><rect x="29.80" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="29.80" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="98.00" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/><rect x="166.20" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#0E1A2A"/></svg>
-      <div class="brand">OPERATIONS<small>MIT SYSTEM</small></div>
-    </div>
-    <nav>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#standort">Standort Tanger</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#ueber-uns">√úber uns</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-    <div class="lang"><a class="cur" href="index.html">DE</a><a href="en.html">EN</a><a href="fr.html">FR</a><a href="ar.html">AR</a></div>
+<header class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow" data-i="heroEyebrow">Lohnfertigung · Tanger Free Zone</span>
+    <h1 data-i="heroH" >Ihr Produktions-Hub in Tanger — <em>mit System.</em></h1>
+    <p data-i="heroP">Wir bringen die Lohnfertigung deutscher Unternehmen nach Marokko: Produktion, Konfektionierung und Logistik — mit deutschem Qualitätsanspruch, Lean Six Sigma und 14 Tagen Seefracht nach Nordeuropa.</p>
+    <a class="cta" href="#s1" data-i="heroCta">So funktioniert's</a>
   </div>
-</header>
+  <img src="logo_transparent.svg" alt="Operations mit System" style="width:100%;max-width:480px;justify-self:center;filter:drop-shadow(0 12px 40px rgba(0,0,0,.35))">
+</div></header>
 
-<div class="hero">
-  <div class="grid-bg"></div>
-  <div class="wrap">
-    <span class="badge">STARTUP ¬∑ D√úSSELDORF ‚Üí TANGER FREE ZONE</span>
-    <h1>Produktion und Logistik<br>ausgelagert ‚Äî <em>mit System.</em></h1>
-    <p class="lead">Wir bauen eine Plattform f√ºr Auftragsfertigung und 3PL-Dienstleistungen in der Tanger Free Zone (Marokko) ‚Äì f√ºr deutsche und europ√§ische Unternehmen, die Produktion, Konfektionierung und Fulfillment auslagern wollen. In Euro fakturiert, zollfrei in die EU, mit deutschem Ansprechpartner.</p>
-    <div class="cta">
-      <a class="btn btn-copper" href="#kontakt">Gespr√§ch vereinbaren</a>
-      <a class="btn btn-ghost" href="#leistungen">Was wir aufbauen</a>
-    </div>
+<section id="s1"><div class="wrap split">
+  <div>
+    <span class="num">1</span>
+    <h2 data-i="s1h">Wer wir sind — und warum Tanger</h2>
+    <p data-i="s1p">Operations mit System ist der Industriedienstleister, der Ihre Fertigung in die Tanger Free Zone bringt: 0 % Zoll in die EU, EUR-Fakturierung, 14 Tage Seefracht bis zu Ihrem Lager — geführt von deutschen Prozess-Ingenieuren mit Lean-Six-Sigma-Standard.</p>
   </div>
-</div>
+  <video src="clip2_halle.mp4" autoplay muted loop playsinline></video>
+</div></section>
 
-<section id="leistungen">
-  <div class="wrap">
-    <div class="kicker">Leistungen</div>
-    <h2>Was wir f√ºr Sie √ºbernehmen</h2>
-    <p class="intro">Wir verstehen uns als verl√§ngerte Werkbank und Logistikpartner in einem: Sie behalten Produkt, Marke und Kunden ‚Äì wir √ºbernehmen Fertigung, Verpackung und Warenfluss. Unsere erste Produktionslinie ist in Planung; Start der Pilotfertigung ist f√ºr Ende 2026 vorgesehen.</p>
-    <div class="cards">
-      <div class="card">
-        <div class="pod"></div>
-        <h3>AUFTRAGSFERTIGUNG</h3>
-        <p>Lohnfertigung nach Ihren Spezifikationen und Rezepturen ‚Äì vom Pulvermischen bis zur fertigen Produkteinheit, dokumentiert und qualit√§tsgepr√ºft.</p>
-        <span class="soon">IM AUFBAU ¬∑ AB 2027</span>
-      </div>
-      <div class="card">
-        <div class="pod"></div>
-        <h3>KONFEKTIONIERUNG &amp; VERPACKUNG</h3>
-        <p>Abf√ºllen, Z√§hlen, Verwiegen, Versiegeln, Etikettieren ‚Äì auch viele kleine Lose und Sprachvarianten wirtschaftlich abgebildet.</p>
-        <span class="soon">IM AUFBAU ¬∑ AB 2027</span>
-      </div>
-      <div class="card">
-        <div class="pod"></div>
-        <h3>LAGER &amp; FULFILLMENT (3PL)</h3>
-        <p>Klimatisierte Lagerung in der Freizone, Bestandsf√ºhrung, Kommissionierung und Versand-Handling ab Tanger Med ‚Äì Container wie St√ºckgut.</p>
-        <span class="soon">IM AUFBAU ¬∑ AB 2027</span>
-      </div>
-      <div class="card">
-        <div class="pod"></div>
-        <h3>BESCHAFFUNG &amp; SUPPLY CHAIN</h3>
-        <p>Auf Wunsch √ºbernehmen wir den Einkauf Ihrer Roh- und Packstoffe und b√ºndeln Mengen ‚Äì transparent und mit offener Kalkulation.</p>
-        <span class="soon">PERSPEKTIVE</span>
-      </div>
+<div class="stats"><div class="wrap">
+  <div><b>14</b><span>Tage Seefracht<br>bis Nordeuropa</span></div>
+  <div><b>0 %</b><span>Zoll in die EU<br>(Assoziierungsabkommen)</span></div>
+  <div><b>100 %</b><span>EUR-Fakturierung —<br>kein Währungsrisiko</span></div>
+  <div><b>3,96 Mio.</b><span>Pods Jahreskapazität<br>je Linie (1 Schicht)</span></div>
+</div></div>
+
+<section id="s2"><div class="wrap split rev">
+  <video src="clip4_beratung.mp4" autoplay muted loop playsinline></video>
+  <div>
+    <span class="num">2</span>
+    <h2 data-i="s2h">Ihr Weg zu uns — einfacher geht's nicht</h2>
+    <p data-i="s2p">Sie melden sich mit Ihrem Produktionsvorhaben — per E-Mail, LinkedIn, Telefon oder WhatsApp. Mit der Registrierung erhalten Sie sofort unser Standard-NDA. Dann erstellen wir gemeinsam das Lastenheft und prüfen die Wirtschaftlichkeit — kostenlos und transparent.</p>
+    <div class="models">
+      <div class="model"><b data-i="mAh">Modell A · Ihre Anlage, unser Betrieb</b><span data-i="mAp">Sie stellen Ihre Maschine bei — reine Lohnfertigung, maximale Ersparnis. Start in 3–6 Monaten.</span></div>
+      <div class="model"><b data-i="mBh">Modell B · Full-Service inkl. Maschine</b><span data-i="mBp">Wir beschaffen und finanzieren die Anlage mit — Start ohne eigenes Invest in 6–9 Monaten.</span></div>
     </div>
   </div>
-</section>
+</div></section>
 
-<section class="alt" id="standort">
-  <div class="wrap">
-    <div class="kicker">Standort</div>
-    <h2>Warum Tanger Free Zone?</h2>
-    <div class="split">
-      <p class="intro">Die Zone d'Acc√©l√©ration Industrielle in Tanger ist einer der dynamischsten Industriestandorte Afrikas ‚Äì direkt an der Stra√üe von Gibraltar, mit dem gr√∂√üten Hafen des Mittelmeers (Tanger Med) vor der T√ºr. F√ºr europ√§ische Auftraggeber hei√üt das: Produktion zu wettbewerbsf√§higen Kosten, ohne die Nachteile langer Asien-Lieferketten ‚Äì und dank Assoziierungsabkommen mit der EU ohne Zollgrenze.</p>
-      <div class="facts">
-        <div class="fact"><b>4‚Äì6 Tage</b><span>Laufzeit Tanger Med ‚Üí Deutschland, planbar und kurz</span></div>
-        <div class="fact"><b>0 % Zoll</b><span>pr√§ferenzieller Warenursprung Marokko ‚Üí EU-Import zollfrei</span></div>
-        <div class="fact"><b>EUR</b><span>Fakturierung in Euro ‚Äì kein W√§hrungsrisiko f√ºr Sie</span></div>
-        <div class="fact"><b>DE + FR</b><span>deutschsprachige F√ºhrung, franz√∂sischsprachiges Team vor Ort</span></div>
-      </div>
+<section id="s3"><div class="wrap split">
+  <div>
+    <span class="num">3</span>
+    <h2 data-i="s3h">Qualität, die Sie messen können</h2>
+    <p data-i="s3p">ISO-9001-fähiges Qualitätsmanagement von Tag eins: 100-%-Kontrollwaage, Chargenrückverfolgung, Auflöse- und Siegeltests im eigenen Labor. Abweichungen lösen den 8D-Prozess aus — Qualität ist bei uns messbar, nicht Meinung.</p>
+  </div>
+  <img src="labor_bild.jpg" alt="Qualitätsprüfung: Auflösetest eines wasserlöslichen Pods im Labor">
+</div></section>
+
+<section id="s4"><div class="wrap split rev">
+  <img src="hub_uebersicht.jpg" alt="Der OMS-Hub von oben: Lean-Produktion und Hochregallager unter einem Dach">
+  <div>
+    <span class="num">4</span>
+    <h2 data-i="s4h">Von unserem Hub zu Ihrem Lager</h2>
+    <p data-i="s4p">Palettierung, EUR.1-Präferenzdokumente, Containerverladung direkt in der Freizone — und 14 Tage später steht Ihre Ware in Nordeuropa. Planbar, zollfrei, in EUR fakturiert.</p>
+  </div>
+</div></section>
+
+<section id="rechner"><div class="wrap">
+  <div style="text-align:center"><span class="eyebrow" data-i="calcEye">Interaktiv</span>
+  <h2 data-i="calcH">Was könnte Ihre Fertigung in Tanger sparen?</h2></div>
+  <div class="calc">
+    <label for="vol" data-i="calcLabel">Ihr Jahresvolumen (Einheiten)</label>
+    <div class="row"><span>100.000</span><b id="volOut">2.000.000</b><span>10 Mio.</span></div>
+    <input type="range" id="vol" min="100000" max="10000000" step="100000" value="2000000">
+    <div class="result">
+      <span data-i="calcIntro">Typisches Einsparpotenzial gegenüber Fertigung in West-Europa:</span><br>
+      <b id="saveOut">ca. 45.000 – 90.000 € pro Jahr</b>
+      <div class="note" data-i="calcNote">Modellrechnung als Orientierung (Richtwert 15–30 % der Fertigungskosten, je nach Produkt und Automatisierungsgrad) — keine Zusage. Ihre genaue, belastbare Kalkulation erstellen wir kostenlos im Rahmen der Wirtschaftlichkeitsprüfung.</div>
     </div>
   </div>
-</section>
+</div></section>
 
-<section id="roadmap">
-  <div class="wrap">
-    <div class="kicker">Roadmap</div>
-    <h2>Wo wir stehen ‚Äì ehrlich gesagt</h2>
-    <p class="intro">Wir sind ein Startup und bauen gerade auf. Statt fertiger Hochglanz-Versprechen zeigen wir Ihnen lieber transparent, was wann kommt:</p>
-    <div class="roadmap" style="margin-top:46px">
-      <div class="step done">
-        <div class="when">August 2026</div>
-        <h3>Gr√ºndung Operations mit System GmbH, D√ºsseldorf</h3>
-        <p>Die deutsche Muttergesellschaft als Vertragspartner f√ºr unsere Kunden ‚Äì deutsches Recht, deutsche Rechnung.</p>
-      </div>
-      <div class="step">
-        <div class="when">Herbst 2026</div>
-        <h3>Gr√ºndung der Tochtergesellschaft in Marokko &amp; Zulassung Tanger Free Zone</h3>
-        <p>Operations mit System SARL mit Produktionsfl√§che in der Zone d'Acc√©l√©ration Industrielle, Tanger.</p>
-      </div>
-      <div class="step">
-        <div class="when">Q4 2026</div>
-        <h3>Aufbau der ersten Produktions- und Verpackungslinie, Pilotfertigung</h3>
-        <p>Installation der Anlagen, Probel√§ufe und Musterfreigaben gemeinsam mit unserem Pilotkunden.</p>
-      </div>
-      <div class="step">
-        <div class="when">Ab 2027</div>
-        <h3>Serienbetrieb &amp; √ñffnung der Plattform f√ºr weitere Auftraggeber</h3>
-        <p>Kapazit√§ten f√ºr Auftragsfertigung, Konfektionierung und 3PL ‚Äì sprechen Sie uns fr√ºhzeitig an, um sich Kapazit√§t zu sichern.</p>
-      </div>
-    </div>
+<section id="wissen"><div class="wrap">
+  <div style="text-align:center"><span class="eyebrow" data-i="faqEye">Woran deutsche Unternehmer denken</span>
+  <h2 data-i="faqH">Die Fragen, die Sie stellen würden — beantwortet</h2></div>
+  <div class="faq">
+    <details><summary data-i="q1">Zoll &amp; Präferenzursprung: Zahle ich wirklich 0 %?</summary><div data-i="a1">Ja — Marokko und die EU sind über das Assoziierungsabkommen verbunden. Wir erstellen für jede Lieferung die EUR.1-Präferenzdokumente; die Warenursprungsregeln prüfen wir je Produkt bereits in der Wirtschaftlichkeitsprüfung, damit es später keine Überraschungen am Zoll gibt.</div></details>
+    <details><summary data-i="q2">Verträge &amp; Recht: Worauf lasse ich mich ein?</summary><div data-i="a2">Ihr Vertragspartner ist eine deutsche GmbH mit Sitz in Düsseldorf — Fertigungsvertrag nach deutschem Recht, deutscher Gerichtsstand, Preisbindung in EUR. Vor jedem inhaltlichen Austausch unterzeichnen wir ein beiderseitiges NDA nach GeschGehG. Ihre Rezepturen und Daten bleiben Ihr Eigentum.</div></details>
+    <details><summary data-i="q3">Versicherung &amp; Risiko: Was ist abgesichert?</summary><div data-i="a3">Transportversicherung für jede Seefracht-Sendung, Betriebshaftpflicht am Standort, und auf Wunsch strukturieren wir die Zusammenarbeit so, dass Ihre Waren bis zur Übergabe versichert bleiben. Für Investitionsmodelle nutzen wir zusätzlich die Absicherungsinstrumente des Bundes für Auslandsprojekte.</div></details>
+    <details><summary data-i="q4">Logistik: Wie zuverlässig sind 14 Tage?</summary><div data-i="a4">Tanger Med ist der größte Hafen des Mittelmeers mit täglichen Abfahrten nach Nordeuropa. 14 Tage Port-to-Port sind Regellaufzeit etablierter Speditionen (FCL und LCL) — planbar wie ein innereuropäischer Landtransport, nur günstiger. Auf Wunsch liefern wir bis an Ihre Rampe.</div></details>
+    <details><summary data-i="q5">Qualität: Wer garantiert deutschen Standard?</summary><div data-i="a5">Unser Qualitätsmanagement ist von Tag eins nach ISO-9001-Systematik aufgebaut: 100-%-Kontrollwaage in der Linie, Chargenrückverfolgung, dokumentierte Prüfpläne, 8D-Prozess bei Abweichungen. Die Zertifizierung ist fest eingeplant (siehe Roadmap unten) — die Systematik leben wir ab dem ersten Auftrag.</div></details>
+    <details><summary data-i="q6">Engineering: Wer kümmert sich um Maschinen und Prozesse?</summary><div data-i="a6">Unsere eigene Engineering-Kompetenz: Prozessdesign nach Lean Six Sigma, Maschinenbeschaffung und -abnahme (FAT/SAT), Formatwechsel-Optimierung (SMED), vorbeugende Instandhaltung (TPM). Sie können Ihre bestehende Anlage beistellen — Umzug, Aufbau und Wiederinbetriebnahme übernehmen wir.</div></details>
   </div>
-</section>
+</div></section>
 
-<section class="alt" id="ueber-uns">
-  <div class="wrap">
-    <div class="kicker">√úber uns</div>
-    <h2>Ein junges Unternehmen mit klarem Plan</h2>
-    <p class="intro">Operations mit System wird von Unternehmern aufgebaut, die internationale Handels- und Lieferketten zwischen Europa und Marokko seit Jahren aus der Praxis kennen. Wir glauben: Outsourcing muss nicht anonym und weit weg sein. Unsere Kunden bekommen einen Produktionspartner in 4‚Äì6 Tagen Entfernung, einen deutschen Vertragspartner und einen direkten Draht zur Gesch√§ftsf√ºhrung ‚Äì ohne Umwege.</p>
-    <p class="intro" style="margin-top:16px">Hinter dem Aufbau steht ein familiengef√ºhrtes Unternehmernetzwerk in D√ºsseldorf mit Beteiligungen in Handel, Immobilien und Logistik. Die Operations mit System GmbH b√ºndelt dieses Know-how und bringt es in die Freizone Tanger.</p>
+<section id="team"><div class="wrap">
+  <div style="text-align:center"><span class="eyebrow">Wer dahinter steht</span>
+  <h2>Industrie-Erfahrung, keine Theorie</h2></div>
+  <div class="team">
+    <div class="tcard"><div class="avatar">BB</div><b>Geschäftsführung</b><span>Lean Six Sigma Black Belt · Prozessentwicklung und Qualitätssysteme in der deutschen Industrie</span></div>
+    <div class="tcard"><div class="avatar">MT</div><b>Technik &amp; Maschinen</b><span>Maschinenbautechniker · Anlagenaufbau, Instandhaltung, Formatwechsel-Optimierung</span></div>
+    <div class="tcard"><div class="avatar">38</div><b>Operations-Beirat</b><span>38 Jahre Industrie-Erfahrung · Produktionsleitung, Arbeitssicherheit, Personalaufbau</span></div>
   </div>
-</section>
-
-<section id="kontakt">
-  <div class="wrap">
-    <div class="kicker">Kontakt</div>
-    <h2>Lassen Sie uns sprechen</h2>
-    <p class="intro">Sie denken √ºber ausgelagerte Produktion, Konfektionierung oder ein 3PL-Setup nach? Erz√§hlen Sie uns von Ihrem Produkt ‚Äì wir sagen Ihnen offen, was wir heute schon k√∂nnen und was erst sp√§ter geht.</p>
-    <div class="contact-mail">‚úâ <a href="mailto:kontakt@operationsmitsystem.de">kontakt@operationsmitsystem.de</a></div>
-    <div class="contact-box">
-      <div class="loc">
-        <h3>D√úSSELDORF (VERTRAG &amp; VERTRIEB)</h3>
-        <p>Operations mit System GmbH<br>Burgplatz 12<br>40213 D√ºsseldorf<br>Deutschland</p>
-      </div>
-      <div class="loc">
-        <h3>TANGER (PRODUKTION ¬∑ IM AUFBAU)</h3>
-        <p>Operations mit System SARL <em>(in Gr√ºndung)</em><br>Zone d'Acc√©l√©ration Industrielle<br>Tanger Free Zone<br>Marokko</p>
-      </div>
-    </div>
+  <h3 style="text-align:center;margin-top:50px">Unsere Qualitäts-Roadmap — transparent bis zur Zertifizierung</h3>
+  <div class="roadmap">
+    <div class="rstep done"><b>2026 · Q3</b><span>QM-Handbuch &amp; Prüfpläne nach ISO-9001-Systematik</span></div>
+    <div class="rstep done"><b>2026 · Q4</b><span>Pilotproduktion mit 100-%-Verwiegung &amp; Kundenaudit</span></div>
+    <div class="rstep"><b>2027 · H1</b><span>Serienstart, 5S-Audits, Lieferantenqualifizierung</span></div>
+    <div class="rstep"><b>2027 · Q4</b><span>ISO-9001-Zertifizierung durch akkreditierte Stelle (geplant)</span></div>
   </div>
-</section>
+</div></section>
 
-<footer>
-  <div class="wrap">
-    <div class="top">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240"><rect x="29.80" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="98.00" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="29.80" width="44.00" height="44.00" rx="12.32" fill="#C66A3E"/><rect x="29.80" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="98.00" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="29.80" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="98.00" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/><rect x="166.20" y="166.20" width="44.00" height="44.00" rx="12.32" fill="#FFFFFF"/></svg>
-      <div style="font-family:'Jura';letter-spacing:.18em;font-size:13px">PRODUKTION ¬∑ KONFEKTIONIERUNG ¬∑ 3PL</div>
-    </div>
-    <div class="legal" id="impressum">
-      <div>
-        <h4>Impressum</h4>
-        <p>Operations mit System GmbH<br>Burgplatz 12, 40213 D√ºsseldorf, Deutschland<br>Gesch√§ftsf√ºhrung: &#91;wird nach Gr√ºndung erg√§nzt&#93;<br>Handelsregister: Amtsgericht D√ºsseldorf, HRB folgt (Gesellschaft in Gr√ºndung)<br>E-Mail: kontakt@operationsmitsystem.de</p>
-      </div>
-      <div id="datenschutz">
-        <h4>Datenschutz</h4>
-        <p>Diese Website verwendet keine Cookies, keine Tracking-Dienste und keine Analyse-Tools. Beim Aufruf werden durch den Hosting-Anbieter technisch notwendige Server-Logdaten (z.B. IP-Adresse, Zeitpunkt) verarbeitet (Art. 6 Abs. 1 lit. f DSGVO). Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben ausschlie√ülich zur Beantwortung Ihrer Anfrage. Verantwortlicher: Operations mit System GmbH (Anschrift siehe Impressum).</p>
-      </div>
-    </div>
-    <div class="fineprint">¬© 2026 Operations mit System GmbH ¬∑ Alle Angaben zu geplanten Leistungen beziehen sich auf den dargestellten Aufbau-Zeitplan.</div>
-  </div>
-</footer>
+<section class="ctaband"><div class="wrap" style="text-align:center">
+  <span class="eyebrow" data-i="ctaEyebrow">Bereit anzufangen?</span>
+  <h2 data-i="ctaH" style="font-size:1.9rem;margin:.3em auto .4em;max-width:22ch">Erzählen Sie uns von Ihrem Produkt — den Rest machen wir mit System.</h2>
+  <p data-i="ctaP" style="color:var(--ink2);max-width:52ch;margin:0 auto 26px">Unverbindliches Erstgespräch, NDA sofort, Wirtschaftlichkeitsprüfung kostenlos. Sie hören innerhalb von 48 Stunden von uns.</p>
+  <a class="cta" href="mailto:kontakt@operationsmitsystem.de" data-i="ctaBtn1">E-Mail schreiben</a>
+  <a class="cta ghost2" href="https://wa.me/491711171179" data-i="ctaBtn2">WhatsApp starten</a>
+</div></section>
 
+<footer><div class="wrap">
+  <div><b style="color:#fff;letter-spacing:.12em">OPERATIONS MIT SYSTEM</b><br><span data-i="fLine">Produktions-Hub Tanger Free Zone · Deutsche Gesellschaft, Düsseldorf</span><br><a href="mailto:kontakt@operationsmitsystem.de">kontakt@operationsmitsystem.de</a> · +49 171 117 11 79</div>
+  <div><a href="rechtliches.html#impressum">Impressum</a> · <a href="rechtliches.html#datenschutz">Datenschutz</a><br>© 2026 Operations mit System GmbH</div>
+</div></footer>
+
+<script>
+const T={
+ de:{},
+ en:{banner:"Draft v2 · internal · not published",navStart:"Home",navUnt:"For Businesses",navKar:"Careers",heroEyebrow:"Contract Manufacturing · Tangier Free Zone",heroH:"Your production hub in Tangier — <em>with system.</em>",heroP:"We bring German companies' contract manufacturing to Morocco: production, packaging and logistics — with German quality standards, Lean Six Sigma and 14 days sea freight to Northern Europe.",heroCta:"How it works",s1h:"Who we are — and why Tangier",s1p:"Operations mit System is the industrial service provider bringing your production to the Tangier Free Zone: 0% customs into the EU, EUR invoicing, 14 days sea freight to your warehouse — led by German process engineers with Lean Six Sigma standards.",s2h:"Your way to us — it couldn't be simpler",s2p:"Contact us with your production project — by e-mail, LinkedIn, phone or WhatsApp. You receive our standard NDA immediately upon registration. Together we create the specification and check feasibility — free and transparent.",mAh:"Model A · Your machine, our operation",mAp:"You provide your machine — pure contract manufacturing, maximum savings. Start in 3–6 months.",mBh:"Model B · Full service incl. machine",mBp:"We source and co-finance the machine — start without your own investment in 6–9 months.",s3h:"Quality you can measure",s3p:"ISO 9001-ready quality management from day one: 100% checkweighing, batch traceability, dissolution and seal tests in our own lab. Deviations trigger the 8D process — quality is measurable, not opinion.",ph3:"🎬 Video coming: QC laboratory",s4h:"From our hub to your warehouse",s4p:"Palletising, EUR.1 preference documents, container loading directly in the free zone — 14 days later your goods arrive in Northern Europe. Predictable, duty-free, invoiced in EUR.",ph4:"🎬 Video coming: Loading & sea freight",fLine:"Production hub Tangier Free Zone · German company, Düsseldorf",ctaEyebrow:"Ready to start?",ctaH:"Tell us about your product — we handle the rest, with system.",ctaP:"No-obligation first call, NDA immediately, free feasibility check. You will hear from us within 48 hours.",ctaBtn1:"Write an e-mail",ctaBtn2:"Start WhatsApp chat",calcEye:"Interactive",calcH:"What could your production save in Tangier?",calcLabel:"Your annual volume (units)",calcIntro:"Typical savings potential versus production in Western Europe:",calcNote:"Model calculation for orientation (15–30 % of manufacturing costs depending on product and automation) — not a commitment. We prepare your exact calculation free of charge as part of the feasibility study.",faqEye:"What German entrepreneurs think about",faqH:"The questions you would ask — answered",q1:"Customs & preferential origin: do I really pay 0 %?",a1:"Yes — Morocco and the EU are linked by the Association Agreement. We issue EUR.1 preference documents for every shipment and check the rules of origin for your product during the feasibility study.",q2:"Contracts & law: what am I committing to?",a2:"Your contract partner is a German GmbH based in Düsseldorf — manufacturing contract under German law, German jurisdiction, prices fixed in EUR. A mutual NDA is signed before any exchange. Your formulas and data remain your property.",q3:"Insurance & risk: what is covered?",a3:"Transport insurance for every sea shipment, business liability at the site, and on request we structure the cooperation so your goods remain insured until handover. For investment models we additionally use the German federal guarantee instruments.",q4:"Logistics: how reliable are 14 days?",a4:"Tanger Med is the largest port in the Mediterranean with daily departures to Northern Europe. 14 days port-to-port is the standard transit time of established freight forwarders (FCL and LCL). On request we deliver to your ramp.",q5:"Quality: who guarantees German standards?",a5:"Our quality management follows ISO 9001 methodology from day one: 100 % checkweighing, batch traceability, documented inspection plans, 8D process. Certification is firmly planned — the methodology is lived from the first order.",q6:"Engineering: who takes care of machines and processes?",a6:"Our own engineering competence: process design following Lean Six Sigma, machine sourcing and acceptance (FAT/SAT), changeover optimisation (SMED), preventive maintenance (TPM). You can provide your existing machine — we handle relocation, installation and restart."},
+ fr:{banner:"Brouillon v2 · interne · non publié",navStart:"Accueil",navUnt:"Pour les entreprises",navKar:"Carrières",heroEyebrow:"Production à façon · Tanger Free Zone",heroH:"Votre hub de production à Tanger — <em>avec système.</em>",heroP:"Nous amenons la production à façon des entreprises allemandes au Maroc : production, conditionnement et logistique — avec les standards de qualité allemands, Lean Six Sigma et 14 jours de fret maritime vers l'Europe du Nord.",heroCta:"Comment ça marche",s1h:"Qui nous sommes — et pourquoi Tanger",s1p:"Operations mit System est le prestataire industriel qui amène votre production dans la Tanger Free Zone : 0 % de droits de douane vers l'UE, facturation en EUR, 14 jours de fret maritime — dirigé par des ingénieurs process allemands selon le standard Lean Six Sigma.",s2h:"Votre chemin vers nous — simplicité maximale",s2p:"Contactez-nous avec votre projet de production — par e-mail, LinkedIn, téléphone ou WhatsApp. Vous recevez immédiatement notre NDA standard. Ensemble, nous établissons le cahier des charges et vérifions la rentabilité — gratuitement et en toute transparence.",mAh:"Modèle A · Votre machine, notre exploitation",mAp:"Vous mettez votre machine à disposition — production à façon pure, économies maximales. Démarrage en 3 à 6 mois.",mBh:"Modèle B · Full-service machine incluse",mBp:"Nous achetons et cofinançons la machine — démarrage sans investissement propre en 6 à 9 mois.",s3h:"Une qualité mesurable",s3p:"Management de la qualité ISO 9001-ready dès le premier jour : contrôle pondéral à 100 %, traçabilité des lots, tests de dissolution et de scellage dans notre propre laboratoire.",ph3:"🎬 Vidéo à venir : laboratoire QC",s4h:"De notre hub à votre entrepôt",s4p:"Palettisation, documents EUR.1, chargement des conteneurs directement dans la zone franche — 14 jours plus tard, votre marchandise arrive en Europe du Nord. Prévisible, sans droits de douane, facturé en EUR.",ph4:"🎬 Vidéo à venir : chargement & fret maritime",fLine:"Hub de production Tanger Free Zone · Société allemande, Düsseldorf",ctaEyebrow:"Prêt à démarrer ?",ctaH:"Parlez-nous de votre produit — nous nous occupons du reste, avec système.",ctaP:"Premier échange sans engagement, NDA immédiat, étude de faisabilité gratuite. Réponse sous 48 heures.",ctaBtn1:"Écrire un e-mail",ctaBtn2:"Démarrer WhatsApp",calcEye:"Interactif",calcH:"Combien votre production pourrait-elle économiser à Tanger ?",calcLabel:"Votre volume annuel (unités)",calcIntro:"Potentiel d'économies typique par rapport à une production en Europe de l'Ouest :",calcNote:"Calcul indicatif (15–30 % des coûts de fabrication selon le produit et l'automatisation) — sans engagement. Votre calcul précis est établi gratuitement dans le cadre de l'étude de faisabilité.",faqEye:"Ce à quoi pensent les entrepreneurs",faqH:"Les questions que vous poseriez — avec réponses",q1:"Douane & origine préférentielle : est-ce vraiment 0 % ?",a1:"Oui — le Maroc et l'UE sont liés par l'accord d'association. Nous délivrons les documents EUR.1 pour chaque expédition et vérifions les règles d'origine de votre produit dès l'étude de faisabilité.",q2:"Contrats & droit : à quoi je m'engage ?",a2:"Votre partenaire contractuel est une GmbH allemande basée à Düsseldorf — contrat de fabrication de droit allemand, juridiction allemande, prix fixés en EUR. Un NDA mutuel est signé avant tout échange. Vos formules et données restent votre propriété.",q3:"Assurance & risques : qu'est-ce qui est couvert ?",a3:"Assurance transport pour chaque expédition maritime, responsabilité civile d'exploitation sur site, et sur demande une structure où vos marchandises restent assurées jusqu'à la remise. Pour les modèles d'investissement, nous utilisons en plus les garanties fédérales allemandes.",q4:"Logistique : les 14 jours sont-ils fiables ?",a4:"Tanger Med est le premier port de la Méditerranée avec des départs quotidiens vers l'Europe du Nord. 14 jours port-to-port est le délai standard des transitaires établis (FCL et LCL). Sur demande, livraison jusqu'à votre quai.",q5:"Qualité : qui garantit le standard allemand ?",a5:"Notre management de la qualité suit la méthodologie ISO 9001 dès le premier jour : pesée à 100 %, traçabilité des lots, plans de contrôle documentés, processus 8D. La certification est fermement planifiée — la méthodologie est appliquée dès la première commande.",q6:"Ingénierie : qui s'occupe des machines et des process ?",a6:"Notre propre compétence d'ingénierie : conception des process selon Lean Six Sigma, achat et réception des machines (FAT/SAT), optimisation des changements de format (SMED), maintenance préventive (TPM). Vous pouvez mettre à disposition votre machine existante — nous gérons le transfert, l'installation et le redémarrage."},
+ ar:{banner:"مسودة v2 · داخلي · غير منشور",navStart:"الرئيسية",navUnt:"للشركات",navKar:"الوظائف",heroEyebrow:"التصنيع بالتعاقد · المنطقة الحرة بطنجة",heroH:"مركز إنتاجكم في طنجة — <em>بنظام.</em>",heroP:"نجلب التصنيع بالتعاقد للشركات الألمانية إلى المغرب: الإنتاج والتعبئة والخدمات اللوجستية — بمعايير الجودة الألمانية ومنهجية لين سيكس سيغما، مع شحن بحري إلى شمال أوروبا خلال 14 يوماً.",heroCta:"كيف نعمل",s1h:"من نحن — ولماذا طنجة",s1p:"Operations mit System هي الشريك الصناعي الذي ينقل إنتاجكم إلى المنطقة الحرة بطنجة: 0% رسوم جمركية نحو الاتحاد الأوروبي، فواتير باليورو، و14 يوماً شحن بحري حتى مستودعكم — بقيادة مهندسي عمليات ألمان وفق معايير لين سيكس سيغما.",s2h:"طريقكم إلينا — بأبسط ما يمكن",s2p:"تواصلوا معنا بمشروع إنتاجكم — عبر البريد الإلكتروني أو LinkedIn أو الهاتف أو WhatsApp. تتلقون اتفاقية السرية فوراً عند التسجيل. ثم نعدّ معاً دفتر المواصفات وندرس الجدوى الاقتصادية — مجاناً وبشفافية.",mAh:"النموذج A · آلتكم، تشغيلنا",mAp:"تضعون آلتكم لدينا — تصنيع بالتعاقد خالص وتوفير أقصى. البدء خلال 3–6 أشهر.",mBh:"النموذج B · خدمة شاملة مع الآلة",mBp:"نتولى شراء الآلة وتمويلها المشترك — تبدأون دون استثمار خاص خلال 6–9 أشهر.",s3h:"جودة يمكن قياسها",s3p:"إدارة جودة جاهزة لمعيار ISO 9001 منذ اليوم الأول: وزن مراقب بنسبة 100%، تتبع الدفعات، واختبارات الذوبان والإحكام في مختبرنا الخاص.",s4h:"من مركزنا إلى مستودعكم",s4p:"التنضيد، وثائق EUR.1 التفضيلية، وتحميل الحاويات مباشرة في المنطقة الحرة — وبعد 14 يوماً تصل بضاعتكم إلى شمال أوروبا. بشكل مخطط، دون رسوم جمركية، وبفواتير باليورو.",fLine:"مركز إنتاج بالمنطقة الحرة بطنجة · شركة ألمانية، دوسلدورف",ctaEyebrow:"مستعدون للبدء؟",ctaH:"حدّثونا عن منتجكم — ونتولى نحن الباقي، بنظام.",ctaP:"محادثة أولى دون التزام، اتفاقية سرية فورية، ودراسة جدوى مجانية. نرد عليكم خلال 48 ساعة.",ctaBtn1:"أرسلوا بريداً إلكترونياً",ctaBtn2:"ابدأوا محادثة WhatsApp",calcEye:"تفاعلي",calcH:"كم يمكن أن يوفر إنتاجكم في طنجة؟",calcLabel:"حجم إنتاجكم السنوي (وحدات)",calcIntro:"وفورات نموذجية مقارنة بالإنتاج في أوروبا الغربية:",calcNote:"حساب نموذجي للتوجيه (15–30% من تكاليف التصنيع حسب المنتج ودرجة الأتمتة) — دون التزام. نعدّ حسابكم الدقيق مجاناً في إطار دراسة الجدوى.",faqEye:"ما يفكر فيه رواد الأعمال",faqH:"الأسئلة التي قد تطرحونها — مع الإجابات",q1:"الجمارك والمنشأ التفضيلي: هل هي حقاً 0%؟",a1:"نعم — يرتبط المغرب والاتحاد الأوروبي باتفاقية الشراكة. نصدر وثائق EUR.1 لكل شحنة ونتحقق من قواعد المنشأ لمنتجكم منذ دراسة الجدوى.",q2:"العقود والقانون: بماذا ألتزم؟",a2:"شريككم التعاقدي شركة GmbH ألمانية مقرها دوسلدورف — عقد تصنيع وفق القانون الألماني، اختصاص قضائي ألماني، وأسعار ثابتة باليورو. توقَّع اتفاقية سرية متبادلة قبل أي تبادل. تبقى تركيباتكم وبياناتكم ملكاً لكم.",q3:"التأمين والمخاطر: ما المشمول؟",a3:"تأمين نقل لكل شحنة بحرية، وتأمين مسؤولية تشغيلية في الموقع، وعند الطلب هيكلة تُبقي بضاعتكم مؤمَّنة حتى التسليم. وفي نماذج الاستثمار نستخدم إضافةً أدوات الضمان الفيدرالية الألمانية.",q4:"اللوجستيك: ما مدى موثوقية 14 يوماً؟",a4:"ميناء طنجة المتوسط هو الأكبر في البحر المتوسط مع مغادرات يومية نحو شمال أوروبا. 14 يوماً من ميناء إلى ميناء هي المدة القياسية لوكلاء الشحن المعتمدين (FCL وLCL). وعند الطلب نسلّم حتى رصيف مستودعكم.",q5:"الجودة: من يضمن المعيار الألماني؟",a5:"إدارة الجودة لدينا تتبع منهجية ISO 9001 منذ اليوم الأول: وزن مراقب 100%، تتبع الدفعات، خطط فحص موثقة، وعملية 8D عند الانحرافات. الشهادة مخطط لها بثبات — والمنهجية مطبقة من أول طلبية.",q6:"الهندسة: من يتولى الآلات والعمليات؟",a6:"كفاءتنا الهندسية الخاصة: تصميم العمليات وفق لين سيكس سيغما، شراء الآلات واستلامها (FAT/SAT)، تحسين تغيير الصيغ (SMED)، والصيانة الوقائية (TPM). يمكنكم وضع آلتكم الحالية لدينا — ونتولى النقل والتركيب وإعادة التشغيل."}
+};
+const DE={};document.querySelectorAll('[data-i]').forEach(el=>DE[el.dataset.i]=el.innerHTML);T.de=DE;
+// Einsparungs-Rechner
+const vol=document.getElementById('vol');
+if(vol){const f=n=>n.toLocaleString('de-DE');
+  const upd=()=>{const v=+vol.value;
+    document.getElementById('volOut').textContent=f(v);
+    const cpu=0.15; // grobe Fertigungskosten €/Einheit (Richtwert)
+    const lo=Math.round(v*cpu*0.15/1000)*1000, hi=Math.round(v*cpu*0.30/1000)*1000;
+    document.getElementById('saveOut').textContent='ca. '+f(lo)+' – '+f(hi)+' € pro Jahr';};
+  vol.addEventListener('input',upd);upd();}
+
+function setLang(l){
+  const d=T[l]||T.de;
+  document.querySelectorAll('[data-i]').forEach(el=>{if(d[el.dataset.i])el.innerHTML=d[el.dataset.i];});
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x.dataset.lang===l));
+  try{localStorage.setItem('oms_lang',l);}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+let savedLang='de';try{savedLang=localStorage.getItem('oms_lang')||'de';}catch(e){}
+if(savedLang!=='de')setLang(savedLang);
+</script>
 </body>
 </html>

@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Operations mit System ‚Äî Favicon -->
-  <rect width="64" height="64" rx="14" fill="#0F3D47"/>
-  <g transform="translate(32,32) scale(0.76) translate(-32,-32)" stroke-linejoin="round">
-    <path d="M32 3 L57 17.5 L57 24 L7 32 L7 17.5 Z" fill="#F2F7F6" stroke="#F2F7F6" stroke-width="2.4"/>
-    <path d="M57 32 L57 46.5 L32 61 L7 46.5 L7 40 Z" fill="#F2F7F6" stroke="#F2F7F6" stroke-width="2.4"/>
-    <rect x="28.5" y="23.5" width="7" height="17" rx="3.5" fill="#E9A23B"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14" fill="#0E1A2A"/><g><rect x="10" y="10" width="12" height="12" rx="3.5" fill="#fff"/><rect x="26" y="10" width="12" height="12" rx="3.5" fill="#fff"/><rect x="42" y="10" width="12" height="12" rx="3.5" fill="#C66A3E"/><rect x="10" y="26" width="12" height="12" rx="3.5" fill="#fff"/><rect x="42" y="26" width="12" height="12" rx="3.5" fill="#fff"/><rect x="10" y="42" width="12" height="12" rx="3.5" fill="#fff"/><rect x="26" y="42" width="12" height="12" rx="3.5" fill="#fff"/><rect x="42" y="42" width="12" height="12" rx="3.5" fill="#fff"/></g></svg>

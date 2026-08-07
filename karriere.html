@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karriere — Verstärkung für unser Team | Operations mit System</title>
+<meta name="description" content="Bau mit uns einen Produktionsstandort in Tanger auf: Elektriker, Mechaniker, Ingenieure, Produktionsmitarbeiter, Buchhaltung, Vertrieb. Jetzt bewerben.">
+<meta property="og:title" content="Karriere bei Operations mit System — Verstärkung gesucht">
+<meta property="og:description" content="8 offene Rollen in Tanger und Deutschland: Bau mit uns einen Produktionsstandort auf — von der ersten Stunde an.">
+<meta property="og:image" content="https://operationsmitsystem.de/team_gluecklich.jpg">
+<meta property="og:url" content="https://operationsmitsystem.de/karriere.html">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0E1A2A;--copper:#C66A3E;--copper-soft:#D98A5F;--bg:#FAFBFC;--surface:#fff;--ink:#0E1A2A;--ink2:#4A5A6E;--line:#E3E8EE}
+  *{box-sizing:border-box}
+  html{font-size:19px}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Jura","Avenir Next",sans-serif;line-height:1.65}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);font-weight:700}
+  h1,h2,h3{line-height:1.18;font-weight:600}
+  .concept{position:sticky;top:0;z-index:60;background:var(--copper);color:#fff;text-align:center;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;padding:6px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(14,26,42,.95);backdrop-filter:blur(8px);direction:ltr}
+  nav .wrap{display:flex;align-items:center;height:84px;gap:20px}
+  nav img{height:64px;background:#fff;border-radius:8px;padding:6px 14px}
+  nav a{color:#93A3B8;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+  nav a.active{color:#D98A5F;font-weight:600}
+  .lang{margin-left:auto;display:flex;gap:6px}
+  .lang button{background:transparent;border:1px solid #3A4C63;color:#93A3B8;border-radius:5px;padding:5px 12px;cursor:pointer;font:600 .78rem "Jura";letter-spacing:.08em}
+  .lang button.on{background:var(--copper);border-color:var(--copper);color:#fff}
+  .hero{background:radial-gradient(900px 400px at 85% -10%,rgba(198,106,62,.2),transparent 60%),var(--navy);color:#fff;padding:64px 0}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+  .hero h1{font-size:clamp(1.7rem,3.4vw,2.5rem);margin:.3em 0;max-width:26ch}
+  .hero p{color:#93A3B8;max-width:62ch}
+  .herologo{width:100%;max-width:480px;justify-self:center;filter:drop-shadow(0 12px 40px rgba(0,0,0,.35))}
+  @media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.herologo{display:none}}
+  section{padding:54px 0}
+  section:nth-of-type(even){background:var(--surface)}
+  .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:28px}
+  .vcard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}
+  .vcard b{display:block;margin-bottom:6px}
+  .vcard p{margin:0;font-size:.88rem;color:var(--ink2)}
+  .imgrow{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+  .imgrow figure{margin:0}
+  .imgrow img{width:100%;border-radius:12px;box-shadow:0 16px 44px rgba(14,26,42,.14);display:block}
+  .imgrow figcaption{font-size:.78rem;color:var(--ink2);margin-top:8px;text-align:center}
+  @media(max-width:720px){.imgrow{grid-template-columns:1fr}}
+  .jobs{max-width:980px;margin:30px auto 0}
+  .jobs details{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}
+  .jobs summary{cursor:pointer;padding:20px 24px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  .jobs summary::after{content:"+";color:var(--copper);font-size:1.4rem;font-weight:400}
+  .jobs details[open] summary::after{content:"–"}
+  .jobs .loc{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;background:#F3E9E1;color:var(--copper);border-radius:99px;padding:4px 12px;font-weight:600;white-space:nowrap}
+  .jobs .body{padding:0 24px 22px;color:var(--ink2);font-size:.9rem}
+  .jobs .body h4{margin:14px 0 6px;color:var(--ink);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+  .jobs .body ul{margin:0;padding-left:20px}
+  [dir="rtl"] .jobs .body ul{padding-left:0;padding-right:20px}
+  .jobs .body li{margin-bottom:4px}
+  .apply{background:var(--navy);color:#fff;border-radius:12px;padding:34px;margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center}
+  .apply b{display:block;color:var(--copper-soft);font-size:1.1rem;margin-bottom:6px}
+  .apply span{font-size:.82rem;color:#93A3B8}
+  .cta{display:inline-block;background:var(--copper);color:#fff;text-decoration:none;padding:14px 28px;border-radius:5px;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;font-weight:700}
+  .form{max-width:760px;margin:30px auto 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:30px;box-shadow:0 16px 44px rgba(14,26,42,.08);display:grid;gap:14px;text-align:start}
+  .form label{font-size:.8rem;color:var(--ink2);display:block;margin-bottom:4px}
+  .form input,.form textarea,.form select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:.9rem;background:var(--bg);color:var(--ink)}
+  .form input:focus,.form textarea:focus,.form select:focus{outline:2px solid var(--copper);border-color:var(--copper)}
+  .form .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.form .row2{grid-template-columns:1fr}}
+  .form button{background:var(--copper);color:#fff;border:none;padding:14px 28px;border-radius:6px;font:700 .82rem "Jura";letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+  .form button:hover{background:var(--copper-soft)}
+  .form .hint{font-size:.72rem;color:var(--ink2)}
+  .ctaband{background:linear-gradient(180deg,var(--surface),#F1ECE6);padding:70px 0;text-align:center}
+  footer{background:var(--navy);color:#93A3B8;padding:40px 0;font-size:.85rem}
+  footer a{color:var(--copper-soft);text-decoration:none}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a href="index.html"><img src="logo_hell.png" alt="Operations mit System"></a>
+  <a href="index.html" data-i="navStart">Start</a>
+  <a href="unternehmer.html" data-i="navUnt">Für Unternehmer</a>
+  <a class="active" href="karriere.html" data-i="navKar">Karriere</a>
+  <div class="lang"><button data-lang="de">DE</button><button data-lang="en">EN</button><button data-lang="fr">FR</button><button data-lang="ar">ع</button></div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+  <span class="eyebrow" data-i="heroEye">Verstärkung gesucht</span>
+  <h1 data-i="heroH">Bau mit uns einen Produktionsstandort auf — von der ersten Stunde an</h1>
+  <p data-i="heroP">Operations mit System bringt die Lohnfertigung deutscher Markenhersteller in die Tanger Free Zone. Wir starten nicht irgendwann — wir bauen jetzt: Hallen, Linien, Prozesse, Team. Wer bei uns anfängt, stellt keine Maschinen in einen fertigen Betrieb, sondern baut den Betrieb mit auf. Mehr Verantwortung, mehr Lernkurve, mehr Handschrift — das ist das Angebot.</p>
+  </div>
+  <img class="herologo" src="logo_transparent.svg" alt="Operations mit System">
+</div></header>
+
+<section><div class="wrap">
+  <span class="eyebrow" data-i="wEye">Wofür wir stehen</span>
+  <h2 data-i="wH">So arbeiten wir — und das erwarten wir voneinander</h2>
+  <div class="values">
+    <div class="vcard"><b data-i="w1h">System schlägt Chaos</b><p data-i="w1p">Lean Six Sigma ist bei uns kein Poster an der Wand: 5S, standardisierte Arbeit, messbare Qualität. Wer Ordnung und klare Prozesse liebt, ist hier richtig.</p></div>
+    <div class="vcard"><b data-i="w2h">Deutscher Standard, marokkanisches Team</b><p data-i="w2p">Wir führen zweisprachig, bezahlen fair über Mindestlohn, melden jede Stelle bei der CNSS an und investieren in Schulung. Respekt ist keine Floskel, sondern Führungsprinzip.</p></div>
+    <div class="vcard"><b data-i="w3h">Sicherheit zuerst</b><p data-i="w3p">PSA, Unterweisungen, ergonomische Arbeitsplätze — niemand riskiert bei uns seine Gesundheit für eine Stückzahl.</p></div>
+    <div class="vcard"><b data-i="w4h">Aufbau heißt Chance</b><p data-i="w4p">Wer heute als Elektriker oder Helfer startet, kann in zwei Jahren Schichtführer sein. Wir besetzen Führung zuerst von innen.</p></div>
+  </div>
+  <div class="imgrow">
+    <figure><img src="team_gluecklich.jpg" alt="Fünf lächelnde Teammitglieder in Arbeitskleidung in der hellen Produktionshalle"><figcaption data-i="fig1">Ein Team, das gerne hier arbeitet — fair bezahlt, geschult, respektiert</figcaption></figure>
+    <figure><img src="team_labor.jpg" alt="Mitarbeiterin im Qualitätslabor beim Auflösetest"><figcaption data-i="fig2">Verantwortung ab Tag eins — wie hier in unserem Qualitätslabor</figcaption></figure>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="eyebrow" data-i="jEye">Offene Rollen</span>
+  <h2 data-i="jH">Wen wir suchen — und was wir erwarten</h2>
+  <p style="max-width:64ch;color:var(--ink2)" data-i="jP">Standort der Produktion: Tanger (Marokko). Kaufmännische und Vertriebsrollen: Deutschland/remote. Start je nach Rolle mit dem Produktionsaufbau ab Ende 2026 — Bewerbungen nehmen wir ab sofort entgegen.</p>
+  <div class="jobs">
+    <details><summary><span data-i="jt1">Elektriker / Elektroniker (m/w/d)</span> <span class="loc">Tanger</span></summary><div class="body" data-i="jb1"><h4>Ihre Aufgaben</h4><ul><li>Installation und Instandhaltung unserer Produktions- und Verpackungslinien</li><li>Fehlersuche an Steuerungen, Sensorik und Antrieben</li><li>Mitaufbau der Elektroinfrastruktur der neuen Halle</li></ul><h4>Ihr Profil</h4><ul><li>Abgeschlossene Ausbildung Elektrik/Elektronik/Mechatronik</li><li>Erfahrung mit Industrieanlagen, idealerweise SPS-Grundkenntnisse</li><li>Arabisch oder Französisch; Deutsch oder Englisch von Vorteil</li></ul></div></details>
+    <details><summary><span data-i="jt2">Industriemechaniker / Schlosser (m/w/d)</span> <span class="loc">Tanger</span></summary><div class="body" data-i="jb2"><h4>Ihre Aufgaben</h4><ul><li>Montage, Wartung und Reparatur der Maschinen</li><li>Formatwechsel und mechanische Optimierung (SMED)</li><li>Aufbau der Werkstatt und des Ersatzteilwesens</li></ul><h4>Ihr Profil</h4><ul><li>Ausbildung als Industriemechaniker, Schlosser oder vergleichbar</li><li>Erfahrung in Instandhaltung oder Maschinenmontage</li><li>Selbstständige, saubere Arbeitsweise (5S)</li></ul></div></details>
+    <details><summary><span data-i="jt3">Produktionsmitarbeiter / Helfer (m/w/d)</span> <span class="loc">Tanger</span></summary><div class="body" data-i="jb3"><h4>Ihre Aufgaben</h4><ul><li>Bedienung der Linien, Abfüllen, Verpacken, Palettieren</li><li>Qualitätskontrollen nach Prüfplan</li><li>Sauberkeit und Ordnung im eigenen Bereich (5S)</li></ul><h4>Ihr Profil</h4><ul><li>Keine Ausbildung nötig — Zuverlässigkeit und Genauigkeit zählen</li><li>Bereitschaft zu Schichtarbeit bei Saisonspitzen</li><li>Wir schulen Sie umfassend ein — und fördern, wer mehr will</li></ul></div></details>
+    <details><summary><span data-i="jt4">Ingenieur Maschinenbau / Fertigungstechnik (m/w/d)</span> <span class="loc">Tanger / DE</span></summary><div class="body" data-i="jb4"><h4>Ihre Aufgaben</h4><ul><li>Prozessdesign und Linienplanung für Kundenprojekte</li><li>Maschinenbeschaffung, FAT/SAT-Abnahmen, Inbetriebnahmen</li><li>Kontinuierliche Verbesserung (OEE, SMED, TPM)</li></ul><h4>Ihr Profil</h4><ul><li>Studium Maschinenbau, Fertigungs-/Produktionstechnik</li><li>Erste Erfahrung in Produktion oder Anlagenbau; Lean von Vorteil</li><li>Reisebereitschaft Tanger/Deutschland; Englisch fließend</li></ul></div></details>
+    <details><summary><span data-i="jt5">Ingenieur Elektrotechnik / Automatisierung (m/w/d)</span> <span class="loc">Tanger / DE</span></summary><div class="body" data-i="jb5"><h4>Ihre Aufgaben</h4><ul><li>Automatisierung und Steuerungstechnik unserer Linien</li><li>Integration von Kontrollwaagen, Sensorik und Datenerfassung</li><li>Technische Dokumentation nach CE und ISO-Systematik</li></ul><h4>Ihr Profil</h4><ul><li>Studium Elektrotechnik/Automatisierung oder Techniker</li><li>SPS-Programmierung, Antriebstechnik, Schaltplanlesen</li><li>Strukturierte Arbeitsweise, Freude an Aufbau und Verantwortung</li></ul></div></details>
+    <details><summary><span data-i="jt6">Buchhalter / Finanzbuchhaltung (m/w/d)</span> <span class="loc">DE / Remote</span></summary><div class="body" data-i="jb6"><h4>Ihre Aufgaben</h4><ul><li>Laufende Buchhaltung der deutschen GmbH, vorbereitende Abschlüsse</li><li>Rechnungsstellung in EUR, Zahlungsverkehr, Mahnwesen</li><li>Schnittstelle zu Steuerberatung in Deutschland und Marokko</li></ul><h4>Ihr Profil</h4><ul><li>Ausbildung im Rechnungswesen</li><li>Sicher in DATEV oder vergleichbarer Software</li><li>Genauigkeit, Diskretion, Interesse an internationalen Sachverhalten</li></ul></div></details>
+    <details><summary><span data-i="jt7">Key Account Manager B2B (m/w/d)</span> <span class="loc">DE / Remote</span></summary><div class="body" data-i="jb7"><h4>Ihre Aufgaben</h4><ul><li>Betreuung und Ausbau unserer deutschen Industriekunden</li><li>Neukundengewinnung: vom Erstkontakt bis zum Fertigungsvertrag</li><li>Schnittstelle zwischen Kunde, Engineering und Produktion</li></ul><h4>Ihr Profil</h4><ul><li>Erfahrung im B2B-Vertrieb erklärungsbedürftiger Leistungen</li><li>Technisches Verständnis, verhandlungssicheres Deutsch und Englisch</li><li>Beziehungsaufbau statt Strohfeuer</li></ul></div></details>
+    <details><summary><span data-i="jt8">Initiativbewerbung — überzeugen Sie uns</span> <span class="loc">Tanger / DE</span></summary><div class="body" data-i="jb8"><p>Qualitäter, Logistiker, Schichtführer, Werkstudenten, Übersetzer — wenn Sie glauben, dass Sie unseren Aufbau voranbringen: Schreiben Sie uns, was Sie können und was Sie bewegen wollen.</p></div></details>
+  </div>
+
+  <div class="apply">
+    <div><b data-i="a1b">1 · Bewerben</b><span data-i="a1s">Kurzes Anschreiben oder LinkedIn-Profil + Lebenslauf an bewerbung@operationsmitsystem.de — kein Anschreiben-Roman nötig</span></div>
+    <div><b data-i="a2b">2 · Kennenlernen</b><span data-i="a2s">Videocall (30 Min.) mit der Geschäftsführung — auf Deutsch, Französisch, Arabisch oder Englisch</span></div>
+    <div><b data-i="a3b">3 · Praxistag</b><span data-i="a3s">Für technische Rollen: ein Tag an der Maschine bzw. eine Fallaufgabe — beide Seiten sehen, ob es passt</span></div>
+    <div><b data-i="a4b">4 · Zusage</b><span data-i="a4s">Klare Konditionen, CNSS-Anmeldung bzw. deutscher Vertrag, strukturierte Einarbeitung</span></div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="wrap">
+  <span class="eyebrow" data-i="cEye">Bereit?</span>
+  <h2 style="max-width:26ch;margin:.3em auto .5em" data-i="cH">Werde Teil des Aufbaus — wir freuen uns auf dich</h2>
+  <form class="form" id="bform">
+    <div class="row2">
+      <div><label for="bname" data-i="fbName">Dein Name*</label><input id="bname" required></div>
+      <div><label for="brole" data-i="fbRole">Wunschrolle*</label><select id="brole"><option>Elektriker / Elektroniker</option><option>Industriemechaniker / Schlosser</option><option>Produktionsmitarbeiter / Helfer</option><option>Ingenieur Maschinenbau / Fertigungstechnik</option><option>Ingenieur Elektrotechnik / Automatisierung</option><option>Buchhaltung</option><option>Key Account Manager B2B</option><option data-i="fbInit">Initiativbewerbung</option></select></div>
+    </div>
+    <div class="row2">
+      <div><label for="bmail" data-i="fbMail">Deine E-Mail*</label><input id="bmail" type="email" required></div>
+      <div><label for="btel" data-i="fbTel">Telefon / WhatsApp</label><input id="btel"></div>
+    </div>
+    <div><label for="bmsg" data-i="fbMsg">Kurz zu dir: Was kannst du, was willst du bewegen?*</label><textarea id="bmsg" rows="4" required></textarea></div>
+    <button type="submit" data-i="fbSend">Bewerbung starten</button>
+    <span class="hint" data-i="fbHint">Der Klick öffnet dein E-Mail-Programm mit der fertigen Nachricht an bewerbung@operationsmitsystem.de — Lebenslauf einfach dort anhängen und absenden.</span>
+  </form>
+</div></div>
+<script>
+document.getElementById('bform').addEventListener('submit',function(e){
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value;
+  const body='Name: '+v('bname')+'\nWunschrolle: '+v('brole')+'\nE-Mail: '+v('bmail')+'\nTelefon: '+v('btel')+'\n\nÜber mich:\n'+v('bmsg')+'\n\n(Lebenslauf angehängt)';
+  location.href='mailto:bewerbung@operationsmitsystem.de?subject='+encodeURIComponent('Bewerbung: '+v('brole')+' – '+v('bname'))+'&body='+encodeURIComponent(body);
+});
+</script>
+
+<footer><div class="wrap">
+  <b style="color:#fff;letter-spacing:.12em">OPERATIONS MIT SYSTEM</b> · <span data-i="fLine">Produktions-Hub Tanger Free Zone</span> · <a href="mailto:bewerbung@operationsmitsystem.de">bewerbung@operationsmitsystem.de</a> · <a href="rechtliches.html#impressum">Impressum</a> · <a href="rechtliches.html#datenschutz">Datenschutz</a> · <a href="index.html" data-i="fBack">Zur Startseite</a>
+</div></footer>
+
+<script>
+const T={de:{},
+en:{banner:"Draft v2 · internal · not published",navStart:"Home",navUnt:"For Businesses",navKar:"Careers",heroEye:"We are hiring",heroH:"Build a production site with us — from hour one",heroP:"Operations mit System brings the contract manufacturing of German brand makers to the Tangier Free Zone. We are not starting someday — we are building now: halls, lines, processes, team. Whoever joins us doesn't place machines into a finished plant, but builds the plant. More responsibility, steeper learning curve, more of your own signature — that's the offer.",wEye:"What we stand for",wH:"How we work — and what we expect from each other",w1h:"System beats chaos",w1p:"Lean Six Sigma is not a poster on our wall: 5S, standardised work, measurable quality. If you love order and clear processes, you belong here.",w2h:"German standard, Moroccan team",w2p:"We lead bilingually, pay fairly above minimum wage, register every position with the CNSS and invest in training. Respect is a leadership principle, not a phrase.",w3h:"Safety first",w3p:"PPE, training, ergonomic workplaces — nobody risks their health here for a production number.",w4h:"Building up means opportunity",w4p:"Whoever starts as an electrician or helper today can be a shift leader in two years. We fill leadership from within first.",fig1:"A team that likes working here — fairly paid, trained, respected",fig2:"Responsibility from day one — like here in our quality lab",jEye:"Open roles",jH:"Who we are looking for — and what we expect",jP:"Production site: Tangier (Morocco). Commercial and sales roles: Germany/remote. Start depending on role with the production ramp-up from late 2026 — applications welcome now.",jt1:"Electrician / Electronics Technician",jb1:"<h4>Your tasks</h4><ul><li>Installation and maintenance of our production and packaging lines</li><li>Troubleshooting on controls, sensors and drives</li><li>Helping build the electrical infrastructure of the new hall</li></ul><h4>Your profile</h4><ul><li>Completed training in electrics/electronics/mechatronics</li><li>Experience with industrial equipment, ideally basic PLC knowledge</li><li>Arabic or French; German or English a plus</li></ul>",jt2:"Industrial Mechanic / Fitter",jb2:"<h4>Your tasks</h4><ul><li>Assembly, maintenance and repair of the machines</li><li>Format changes and mechanical optimisation (SMED)</li><li>Setting up the workshop and spare parts management</li></ul><h4>Your profile</h4><ul><li>Trained industrial mechanic, fitter or comparable</li><li>Experience in maintenance or machine assembly</li><li>Independent, tidy way of working (5S)</li></ul>",jt3:"Production Worker / Helper",jb3:"<h4>Your tasks</h4><ul><li>Operating the lines, filling, packing, palletising</li><li>Quality checks according to inspection plan</li><li>Cleanliness and order in your area (5S)</li></ul><h4>Your profile</h4><ul><li>No formal training needed — reliability and accuracy count</li><li>Willingness to work shifts during seasonal peaks</li><li>We train you thoroughly — and promote those who want more</li></ul>",jt4:"Mechanical / Production Engineer",jb4:"<h4>Your tasks</h4><ul><li>Process design and line planning for customer projects</li><li>Machine sourcing, FAT/SAT acceptance, commissioning</li><li>Continuous improvement (OEE, SMED, TPM)</li></ul><h4>Your profile</h4><ul><li>Degree in mechanical or production engineering</li><li>First experience in production or plant engineering; Lean a plus</li><li>Willingness to travel Tangier/Germany; fluent English</li></ul>",jt5:"Electrical / Automation Engineer",jb5:"<h4>Your tasks</h4><ul><li>Automation and control technology of our lines</li><li>Integration of checkweighers, sensors and data capture</li><li>Technical documentation to CE and ISO methodology</li></ul><h4>Your profile</h4><ul><li>Degree in electrical engineering/automation or technician</li><li>PLC programming, drive technology, reading schematics</li><li>Structured way of working, joy in building and responsibility</li></ul>",jt6:"Accountant / Financial Accounting",jb6:"<h4>Your tasks</h4><ul><li>Ongoing accounting of the German GmbH, preparatory closings</li><li>Invoicing in EUR, payments, dunning</li><li>Interface to tax advisors in Germany and Morocco</li></ul><h4>Your profile</h4><ul><li>Training in accounting</li><li>Confident in DATEV or comparable software</li><li>Accuracy, discretion, interest in international matters</li></ul>",jt7:"Key Account Manager B2B",jb7:"<h4>Your tasks</h4><ul><li>Managing and growing our German industrial clients</li><li>New business: from first contact to manufacturing contract</li><li>Interface between client, engineering and production</li></ul><h4>Your profile</h4><ul><li>Experience in B2B sales of complex services</li><li>Technical understanding, business-fluent German and English</li><li>Relationship building over quick wins</li></ul>",jt8:"Unsolicited application — convince us",jb8:"<p>Quality specialists, logisticians, shift leaders, working students, translators — if you believe you can push our build-up forward: write to us about what you can do and what you want to move.</p>",a1b:"1 · Apply",a1s:"Short cover note or LinkedIn profile + CV to bewerbung@operationsmitsystem.de — no cover-letter novel needed",a2b:"2 · Meet us",a2s:"Video call (30 min.) with the management — in German, French, Arabic or English",a3b:"3 · Trial day",a3s:"For technical roles: a day at the machine or a case task — both sides see if it fits",a4b:"4 · Offer",a4s:"Clear conditions, CNSS registration or German contract, structured onboarding",cEye:"Ready?",cH:"Become part of the build-up — we look forward to you",cBtn:"Apply now: bewerbung@operationsmitsystem.de",fLine:"Production hub Tangier Free Zone",fBack:"Home",fbName:"Your name*",fbRole:"Desired role*",fbInit:"Unsolicited application",fbMail:"Your e-mail*",fbTel:"Phone / WhatsApp",fbMsg:"Briefly about you: what can you do, what do you want to move?*",fbSend:"Start application",fbHint:"Clicking opens your e-mail program with the finished message to bewerbung@operationsmitsystem.de — simply attach your CV there and send."},
+fr:{banner:"Brouillon v2 · interne · non publié",navStart:"Accueil",navUnt:"Pour les entreprises",navKar:"Carrières",heroEye:"Nous recrutons",heroH:"Construis un site de production avec nous — dès la première heure",heroP:"Operations mit System amène la production à façon de marques allemandes dans la zone franche de Tanger. Nous ne démarrons pas un jour — nous construisons maintenant : halls, lignes, process, équipe. Qui nous rejoint ne pose pas des machines dans une usine finie, il construit l'usine. Plus de responsabilité, plus d'apprentissage, plus de signature personnelle — voilà l'offre.",wEye:"Nos valeurs",wH:"Comment nous travaillons — et ce que nous attendons",w1h:"Le système bat le chaos",w1p:"Lean Six Sigma n'est pas une affiche au mur : 5S, travail standardisé, qualité mesurable. Si vous aimez l'ordre et les process clairs, vous êtes au bon endroit.",w2h:"Standard allemand, équipe marocaine",w2p:"Management bilingue, salaire équitable au-dessus du minimum, chaque poste déclaré à la CNSS, investissement dans la formation. Le respect est un principe de management.",w3h:"La sécurité d'abord",w3p:"EPI, formations, postes ergonomiques — personne ne risque sa santé ici pour une cadence.",w4h:"Construire, c'est une chance",w4p:"Qui commence aujourd'hui comme électricien ou opérateur peut être chef d'équipe dans deux ans. Nous promouvons d'abord en interne.",fig1:"Une équipe qui aime travailler ici — bien payée, formée, respectée",fig2:"Des responsabilités dès le premier jour — comme ici dans notre laboratoire qualité",jEye:"Postes ouverts",jH:"Qui nous cherchons — et ce que nous attendons",jP:"Site de production : Tanger (Maroc). Fonctions commerciales et administratives : Allemagne/télétravail. Démarrage selon le poste avec la montée en puissance fin 2026 — candidatures dès maintenant.",jt1:"Électricien / Électronicien",jb1:"<h4>Vos missions</h4><ul><li>Installation et maintenance de nos lignes de production et de conditionnement</li><li>Diagnostic sur automatismes, capteurs et entraînements</li><li>Participation à l'infrastructure électrique du nouveau hall</li></ul><h4>Votre profil</h4><ul><li>Formation en électricité/électronique/mécatronique</li><li>Expérience en équipements industriels, notions d'automates appréciées</li><li>Arabe ou français ; allemand ou anglais un plus</li></ul>",jt2:"Mécanicien industriel / Ajusteur",jb2:"<h4>Vos missions</h4><ul><li>Montage, maintenance et réparation des machines</li><li>Changements de format et optimisation mécanique (SMED)</li><li>Mise en place de l'atelier et de la gestion des pièces détachées</li></ul><h4>Votre profil</h4><ul><li>Formation de mécanicien industriel ou équivalent</li><li>Expérience en maintenance ou montage de machines</li><li>Travail autonome et soigné (5S)</li></ul>",jt3:"Opérateur de production / Manutentionnaire",jb3:"<h4>Vos missions</h4><ul><li>Conduite des lignes, remplissage, conditionnement, palettisation</li><li>Contrôles qualité selon plan de contrôle</li><li>Propreté et ordre dans votre zone (5S)</li></ul><h4>Votre profil</h4><ul><li>Aucune formation exigée — fiabilité et précision comptent</li><li>Disponibilité pour le travail posté en haute saison</li><li>Nous vous formons complètement — et faisons progresser qui veut plus</li></ul>",jt4:"Ingénieur mécanique / génie de production",jb4:"<h4>Vos missions</h4><ul><li>Conception des process et des lignes pour les projets clients</li><li>Achat de machines, réceptions FAT/SAT, mises en service</li><li>Amélioration continue (OEE, SMED, TPM)</li></ul><h4>Votre profil</h4><ul><li>Diplôme en génie mécanique ou de production</li><li>Première expérience en production ; Lean apprécié</li><li>Mobilité Tanger/Allemagne ; anglais courant</li></ul>",jt5:"Ingénieur électrotechnique / automatisation",jb5:"<h4>Vos missions</h4><ul><li>Automatisation et contrôle-commande de nos lignes</li><li>Intégration de trieuses pondérales, capteurs et acquisition de données</li><li>Documentation technique selon CE et méthodologie ISO</li></ul><h4>Votre profil</h4><ul><li>Diplôme en électrotechnique/automatisation ou technicien</li><li>Programmation d'automates, lecture de schémas</li><li>Méthode, goût de la construction et des responsabilités</li></ul>",jt6:"Comptable / Comptabilité financière",jb6:"<h4>Vos missions</h4><ul><li>Comptabilité courante de la GmbH allemande, préparation des clôtures</li><li>Facturation en EUR, paiements, relances</li><li>Interface avec les conseils fiscaux en Allemagne et au Maroc</li></ul><h4>Votre profil</h4><ul><li>Formation en comptabilité</li><li>Maîtrise de DATEV ou logiciel comparable</li><li>Précision, discrétion, intérêt pour l'international</li></ul>",jt7:"Key Account Manager B2B",jb7:"<h4>Vos missions</h4><ul><li>Suivi et développement de nos clients industriels allemands</li><li>Prospection : du premier contact au contrat de fabrication</li><li>Interface entre client, ingénierie et production</li></ul><h4>Votre profil</h4><ul><li>Expérience en vente B2B de prestations complexes</li><li>Compréhension technique, allemand et anglais courants</li><li>Construction de relations durables</li></ul>",jt8:"Candidature spontanée — convainquez-nous",jb8:"<p>Qualiticiens, logisticiens, chefs d'équipe, étudiants, traducteurs — si vous pensez pouvoir faire avancer notre construction : écrivez-nous ce que vous savez faire et ce que vous voulez faire bouger.</p>",a1b:"1 · Postuler",a1s:"Courte lettre ou profil LinkedIn + CV à bewerbung@operationsmitsystem.de — pas de roman nécessaire",a2b:"2 · Se rencontrer",a2s:"Visio (30 min.) avec la direction — en allemand, français, arabe ou anglais",a3b:"3 · Journée d'essai",a3s:"Pour les postes techniques : une journée à la machine ou une étude de cas — chacun voit si ça colle",a4b:"4 · Engagement",a4s:"Conditions claires, déclaration CNSS ou contrat allemand, intégration structurée",cEye:"Prêt ?",cH:"Rejoins la construction — nous nous réjouissons de te connaître",cBtn:"Postuler : bewerbung@operationsmitsystem.de",fLine:"Hub de production Tanger Free Zone",fBack:"Accueil",fbName:"Ton nom*",fbRole:"Poste souhaité*",fbInit:"Candidature spontanée",fbMail:"Ton e-mail*",fbTel:"Téléphone / WhatsApp",fbMsg:"En bref : que sais-tu faire, que veux-tu faire bouger ?*",fbSend:"Démarrer la candidature",fbHint:"Le clic ouvre ta messagerie avec le message prêt pour bewerbung@operationsmitsystem.de — joins-y simplement ton CV et envoie."},
+ar:{banner:"مسودة v2 · داخلي · غير منشور",navStart:"الرئيسية",navUnt:"للشركات",navKar:"الوظائف",heroEye:"نبحث عن تعزيزات",heroH:"ابنِ معنا موقع إنتاج — من الساعة الأولى",heroP:"تجلب Operations mit System التصنيع بالتعاقد لعلامات ألمانية إلى المنطقة الحرة بطنجة. نحن لا نبدأ يوماً ما — نحن نبني الآن: القاعات والخطوط والعمليات والفريق. من ينضم إلينا لا يضع آلات في مصنع جاهز، بل يبني المصنع معنا. مسؤولية أكبر ومنحنى تعلم أسرع وبصمة شخصية — هذا هو عرضنا.",wEye:"قيمنا",wH:"هكذا نعمل — وهذا ما نتوقعه من بعضنا",w1h:"النظام يتغلب على الفوضى",w1p:"لين سيكس سيغما ليست ملصقاً على الحائط: 5S، عمل موحّد، جودة قابلة للقياس. من يحب النظام والعمليات الواضحة فمكانه هنا.",w2h:"معيار ألماني وفريق مغربي",w2p:"نقود بلغتين، ندفع أجراً عادلاً فوق الحد الأدنى، نسجل كل وظيفة في CNSS ونستثمر في التدريب. الاحترام مبدأ قيادي وليس شعاراً.",w3h:"السلامة أولاً",w3p:"معدات وقاية، تدريبات، أماكن عمل مريحة — لا أحد يخاطر بصحته هنا من أجل عدد القطع.",w4h:"البناء يعني الفرصة",w4p:"من يبدأ اليوم كهربائياً أو عاملاً يمكن أن يصبح رئيس وردية خلال عامين. نملأ المناصب القيادية من الداخل أولاً.",fig1:"فريق يحب العمل هنا — أجر عادل وتدريب واحترام",fig2:"مسؤولية من اليوم الأول — كما هنا في مختبر الجودة",jEye:"وظائف شاغرة",jH:"من نبحث عنه — وماذا نتوقع",jP:"موقع الإنتاج: طنجة (المغرب). الوظائف التجارية والإدارية: ألمانيا/عن بعد. البدء حسب الوظيفة مع بناء الإنتاج ابتداءً من أواخر 2026 — نستقبل الطلبات من الآن.",jt1:"كهربائي / تقني إلكترونيات",jb1:"<h4>مهامك</h4><ul><li>تركيب وصيانة خطوط الإنتاج والتعبئة</li><li>تشخيص الأعطال في أنظمة التحكم والحساسات والمحركات</li><li>المشاركة في بناء البنية الكهربائية للقاعة الجديدة</li></ul><h4>ملفك</h4><ul><li>تكوين مهني في الكهرباء/الإلكترونيات/الميكاترونيك</li><li>خبرة بالمعدات الصناعية، ومعرفة أساسية بـ PLC ميزة</li><li>العربية أو الفرنسية؛ الألمانية أو الإنجليزية ميزة</li></ul>",jt2:"ميكانيكي صناعي / حدّاد تركيب",jb2:"<h4>مهامك</h4><ul><li>تركيب وصيانة وإصلاح الآلات</li><li>تغيير الصيغ والتحسين الميكانيكي (SMED)</li><li>تجهيز الورشة وإدارة قطع الغيار</li></ul><h4>ملفك</h4><ul><li>تكوين ميكانيكي صناعي أو ما يعادله</li><li>خبرة في الصيانة أو تركيب الآلات</li><li>عمل مستقل ونظيف (5S)</li></ul>",jt3:"عامل إنتاج / مساعد",jb3:"<h4>مهامك</h4><ul><li>تشغيل الخطوط، التعبئة، التغليف، الترصيص</li><li>فحوصات الجودة وفق خطة الفحص</li><li>النظافة والترتيب في منطقتك (5S)</li></ul><h4>ملفك</h4><ul><li>لا يشترط تكوين — الموثوقية والدقة هما الأساس</li><li>استعداد للعمل بالورديات في مواسم الذروة</li><li>ندرّبك بشكل كامل — ونرقّي من يريد المزيد</li></ul>",jt4:"مهندس ميكانيك / تقنيات الإنتاج",jb4:"<h4>مهامك</h4><ul><li>تصميم العمليات وتخطيط الخطوط لمشاريع العملاء</li><li>شراء الآلات واستلامها (FAT/SAT) وتشغيلها</li><li>التحسين المستمر (OEE, SMED, TPM)</li></ul><h4>ملفك</h4><ul><li>شهادة في الهندسة الميكانيكية أو الإنتاجية</li><li>خبرة أولى في الإنتاج؛ معرفة Lean ميزة</li><li>استعداد للتنقل طنجة/ألمانيا؛ إنجليزية بطلاقة</li></ul>",jt5:"مهندس كهرباء / أتمتة",jb5:"<h4>مهامك</h4><ul><li>أتمتة خطوطنا وتقنيات التحكم</li><li>دمج موازين المراقبة والحساسات وجمع البيانات</li><li>التوثيق التقني وفق CE ومنهجية ISO</li></ul><h4>ملفك</h4><ul><li>شهادة في الهندسة الكهربائية/الأتمتة أو تقني</li><li>برمجة PLC وقراءة المخططات</li><li>عمل منهجي وشغف بالبناء والمسؤولية</li></ul>",jt6:"محاسب / محاسبة مالية",jb6:"<h4>مهامك</h4><ul><li>المحاسبة الجارية للشركة الألمانية وتحضير الإقفالات</li><li>الفوترة باليورو والمدفوعات والمتابعة</li><li>التنسيق مع المستشارين الضريبيين في ألمانيا والمغرب</li></ul><h4>ملفك</h4><ul><li>تكوين في المحاسبة</li><li>إتقان DATEV أو برنامج مماثل</li><li>دقة وكتمان واهتمام بالشؤون الدولية</li></ul>",jt7:"مدير حسابات رئيسية B2B",jb7:"<h4>مهامك</h4><ul><li>رعاية وتنمية عملائنا الصناعيين الألمان</li><li>اكتساب عملاء جدد: من أول اتصال حتى عقد التصنيع</li><li>حلقة الوصل بين العميل والهندسة والإنتاج</li></ul><h4>ملفك</h4><ul><li>خبرة في مبيعات B2B للخدمات المعقدة</li><li>فهم تقني وألمانية وإنجليزية بطلاقة تفاوضية</li><li>بناء علاقات دائمة</li></ul>",jt8:"طلب مبادرة — أقنعونا",jb8:"<p>مختصو جودة، لوجستيون، رؤساء ورديات، طلاب، مترجمون — إن كنت تعتقد أنك ستدفع بناءنا قدماً: اكتب لنا ما تجيده وما تريد تحريكه.</p>",a1b:"1 · قدّم",a1s:"رسالة قصيرة أو ملف LinkedIn + سيرة ذاتية إلى bewerbung@operationsmitsystem.de — لا حاجة لرواية",a2b:"2 · تعارف",a2s:"مكالمة فيديو (30 دقيقة) مع الإدارة — بالألمانية أو الفرنسية أو العربية أو الإنجليزية",a3b:"3 · يوم تجريبي",a3s:"للوظائف التقنية: يوم على الآلة أو مهمة حالة — يرى الطرفان إن كان الأمر مناسباً",a4b:"4 · القبول",a4s:"شروط واضحة، تسجيل CNSS أو عقد ألماني، وتأهيل منظم",cEye:"جاهز؟",cH:"كن جزءاً من البناء — نتطلع إليك",cBtn:"قدّم الآن: bewerbung@operationsmitsystem.de",fLine:"مركز إنتاج المنطقة الحرة بطنجة",fBack:"الرئيسية",fbName:"اسمك*",fbRole:"الوظيفة المرغوبة*",fbInit:"طلب مبادرة",fbMail:"بريدك الإلكتروني*",fbTel:"هاتف / WhatsApp",fbMsg:"باختصار عنك: ماذا تجيد وماذا تريد أن تحرك؟*",fbSend:"ابدأ التقديم",fbHint:"النقر يفتح برنامج بريدك برسالة جاهزة إلى bewerbung@operationsmitsystem.de — أرفق سيرتك الذاتية هناك وأرسل."}
+};
+const DE={};document.querySelectorAll('[data-i]').forEach(el=>DE[el.dataset.i]=el.innerHTML);T.de=DE;
+function setLang(l){
+  const d=T[l]||T.de;
+  document.querySelectorAll('[data-i]').forEach(el=>{if(d[el.dataset.i])el.innerHTML=d[el.dataset.i];});
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x.dataset.lang===l));
+  try{localStorage.setItem('oms_lang',l);}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+let saved='de';try{saved=localStorage.getItem('oms_lang')||'de';}catch(e){}
+setLang(saved);
+</script>
+</body>
+</html>
